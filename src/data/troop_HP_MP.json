@@ -1,0 +1,23 @@
+[
+    { "name": "群雄系", "initHP": 100, "initMP": 30 },
+    { "name": "步兵系", "initHP": 110, "initMP": 10 },
+    { "name": "弓兵系", "initHP": 90, "initMP": 10 },
+    { "name": "骑兵系", "initHP": 100, "initMP": 10 },
+    { "name": "弓骑系", "initHP": 100, "initMP": 10 },
+    { "name": "炮车系", "initHP": 90, "initMP": 10 },
+    { "name": "武道系", "initHP": 90, "initMP": 20 },
+    { "name": "贼兵系", "initHP": 100, "initMP": 20 },
+    { "name": "策士系", "initHP": 90, "initMP": 40 },
+    { "name": "风水系", "initHP": 80, "initMP": 50 },
+    { "name": "道士系", "initHP": 80, "initMP": 40 },
+    { "name": "骑策系", "initHP": 100, "initMP": 40 },
+    { "name": "舞女系", "initHP": 90, "initMP": 20 },
+    { "name": "西凉系", "initHP": 110, "initMP": 50 },
+    { "name": "都督系", "initHP": 90, "initMP": 30 },
+    { "name": "海贼系", "initHP": 90, "initMP": 20 },
+    { "name": "驯熊师", "initHP": 110, "initMP": 50 },
+    { "name": "驯虎师", "initHP": 90, "initMP": 50 },
+    { "name": "咒术士", "initHP": 80, "initMP": 60 },
+    { "name": "仙人系", "initHP": 80, "initMP": 60 },
+    { "name": "皇帝系", "initHP": 80, "initMP": 50 }
+]
