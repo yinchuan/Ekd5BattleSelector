@@ -1,6 +1,16 @@
 import React, { useState } from 'react'
 import items from './data/Item.json'
 import troop from './data/troop.json'
+import {
+    Paper,
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow,
+    Typography,
+} from '@mui/material'
 
 const TwoColumnList = ({ data, selected, updateSelected, updateData }) => {
     const handleLeftClick = (id) => {
@@ -59,6 +69,7 @@ const TwoColumnList = ({ data, selected, updateSelected, updateData }) => {
             )
         )
     }
+
     const updateAcc = (charId, accId) => {
         const acc = accId === -1 ? 0 : accId
         updateData(
@@ -71,7 +82,7 @@ const TwoColumnList = ({ data, selected, updateSelected, updateData }) => {
     return (
         <div style={{ display: 'flex' }}>
             <div style={{ flex: 1 }}>
-                <h3>Available Characters</h3>
+                <Typography variant="h4">Available Characters</Typography>
                 <ul>
                     {data
                         .filter((item) => !selected.includes(item.id))
@@ -85,33 +96,39 @@ const TwoColumnList = ({ data, selected, updateSelected, updateData }) => {
                         ))}
                 </ul>
             </div>
-            <div style={{ flex: 1 }}>
-                <h3>In Our Team({selected.length})</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Name</td>
-                            <td>Level</td>
-                            <td>Weapon</td>
-                            <td>Armor</td>
-                            <td>Acc</td>
-                            <td>HP</td>
-                            <td>MP</td>
-                            <td>gong</td>
-                            <td>jing</td>
-                            <td>fang</td>
-                            <td>bao</td>
-                            <td>shi</td>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <div style={{ flex: 2 }}>
+                <Typography variant="h4">
+                    In Our Team({selected.length})
+                </Typography>
+                <Table size="small">
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>Name</TableCell>
+                            <TableCell>Troop</TableCell>
+                            <TableCell>Level</TableCell>
+                            <TableCell>Weapon</TableCell>
+                            <TableCell>Armor</TableCell>
+                            <TableCell>Acc</TableCell>
+                            <TableCell>HP</TableCell>
+                            <TableCell>MP</TableCell>
+                            <TableCell>gong</TableCell>
+                            <TableCell>jing</TableCell>
+                            <TableCell>fang</TableCell>
+                            <TableCell>bao</TableCell>
+                            <TableCell>shi</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
                         {selected.map((id) => (
-                            <tr>
-                                <td onClick={() => handleRightClick(id)}>
+                            <TableRow>
+                                <TableCell onClick={() => handleRightClick(id)}>
                                     {data[id].name}
-                                </td>
-                                <td>{data[id].level}</td>
-                                <td>
+                                </TableCell>
+                                <TableCell>
+                                    {troop[data[id].troop_type].name}
+                                </TableCell>
+                                <TableCell>{data[id].level}</TableCell>
+                                <TableCell>
                                     <select
                                         value={data[id].weapon}
                                         onChange={(e) => {
@@ -140,8 +157,8 @@ const TwoColumnList = ({ data, selected, updateSelected, updateData }) => {
                                                 </option>
                                             ))}
                                     </select>
-                                </td>
-                                <td>
+                                </TableCell>
+                                <TableCell>
                                     <select
                                         value={data[id].armor}
                                         onChange={(e) => {
@@ -171,8 +188,8 @@ const TwoColumnList = ({ data, selected, updateSelected, updateData }) => {
                                                 </option>
                                             ))}
                                     </select>
-                                </td>
-                                <td>
+                                </TableCell>
+                                <TableCell>
                                     <select
                                         value={data[id].acc}
                                         onChange={(e) => {
@@ -204,18 +221,18 @@ const TwoColumnList = ({ data, selected, updateSelected, updateData }) => {
                                                 </option>
                                             ))}
                                     </select>
-                                </td>
-                                <td>{data[id].HP}</td>
-                                <td>{data[id].MP}</td>
-                                <td>{data[id].gong}</td>
-                                <td>{data[id].jing}</td>
-                                <td>{data[id].fang}</td>
-                                <td>{data[id].bao}</td>
-                                <td>{data[id].shi}</td>
-                            </tr>
+                                </TableCell>
+                                <TableCell>{data[id].HP}</TableCell>
+                                <TableCell>{data[id].MP}</TableCell>
+                                <TableCell>{data[id].gong}</TableCell>
+                                <TableCell>{data[id].jing}</TableCell>
+                                <TableCell>{data[id].fang}</TableCell>
+                                <TableCell>{data[id].bao}</TableCell>
+                                <TableCell>{data[id].shi}</TableCell>
+                            </TableRow>
                         ))}
-                    </tbody>
-                </table>
+                    </TableBody>
+                </Table>
             </div>
         </div>
     )

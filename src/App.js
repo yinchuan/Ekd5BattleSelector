@@ -1,7 +1,19 @@
 import React, { useState, useEffect } from 'react'
+
 import BattleSelector from './BattleSelector'
 import TwoColumnList from './TwoColumnList'
-import Button from './Button'
+
+import {
+    Button,
+    FormControlLabel,
+    InputLabel,
+    MenuItem,
+    Radio,
+    RadioGroup,
+    Select,
+    TextField,
+    Typography,
+} from '@mui/material'
 
 import battles from './data/battles.json'
 import characters from './data/characters.json'
@@ -341,31 +353,35 @@ const App = () => {
 
     return (
         <div>
-            <div>
-                <label>选择剧情：</label>
-                <input
-                    type="radio"
-                    id="red"
-                    name="color"
-                    checked={redOrBlue === 1}
+            <Typography variant="h1" gutterBottom>
+                曹操传 Battle Selector
+            </Typography>
+
+            <InputLabel id="colorLabel">选择剧情：</InputLabel>
+            <RadioGroup
+                name="color"
+                // labelId="colorLabel"
+                defaultValue={redOrBlue}
+            >
+                <FormControlLabel
+                    control={<Radio />}
+                    label="红线"
+                    value={1}
                     onChange={() => {
                         setRedOrBlue(1)
-                        setBattleId(0)
+                        setBattleId(1)
                     }}
                 />
-                <label htmlFor="red">红线</label>
-                <input
-                    type="radio"
-                    id="blue"
-                    name="color"
-                    checked={redOrBlue === 2}
+                <FormControlLabel
+                    control={<Radio />}
+                    label="蓝线"
+                    value={2}
                     onChange={() => {
                         setRedOrBlue(2)
-                        setBattleId(0)
+                        setBattleId(1)
                     }}
                 />
-                <label htmlFor="blue">蓝线</label>
-            </div>
+            </RadioGroup>
 
             <BattleSelector
                 data={battles}
@@ -374,42 +390,44 @@ const App = () => {
                 onChange={setBattleId}
             />
 
-            <div>
-                <label htmlFor="level">Level: </label>
-                <input
-                    id="level"
-                    type="number"
-                    min={MIN_LEVEL}
-                    max={MAX_LEVEL}
-                    value={level}
-                    onChange={(event) => {
-                        setLevel(parseInt(event.target.value))
-                        setLevel(
-                            Math.max(
-                                MIN_LEVEL,
-                                Math.min(MAX_LEVEL, Number(event.target.value))
-                            )
+            <InputLabel id="levelLablel">Level: </InputLabel>
+            <TextField
+                id="level"
+                type="number"
+                // labelId="levelLabel"
+                min={MIN_LEVEL}
+                max={MAX_LEVEL}
+                value={level}
+                onChange={(event) => {
+                    setLevel(parseInt(event.target.value))
+                    setLevel(
+                        Math.max(
+                            MIN_LEVEL,
+                            Math.min(MAX_LEVEL, Number(event.target.value))
                         )
-                    }}
-                />
-            </div>
+                    )
+                }}
+            />
 
             <div>
-                <label htmlFor="saveId">存档到： </label>
-                <select
+                <InputLabel id="saveIdLabel">存档到： </InputLabel>
+                <Select
+                    // labelId="saveIdLabel"
                     id="saveId"
-                    onChange={(e) => setSaveId(e.target.value)}
                     value={saveId}
+                    onChange={(e) => setSaveId(e.target.value)}
                 >
                     {[...Array(10).keys()].map((n) => (
-                        <option key={n + 1} value={n + 1}>
+                        <MenuItem key={n + 1} value={n + 1}>
                             No. {n + 1}
-                        </option>
+                        </MenuItem>
                     ))}
-                </select>
+                </Select>
                 will store to {dFileName(saveId)} and {eFileName(saveId)}.
             </div>
-            <Button onClick={generateFile} label="Generate File" />
+            <Button onClick={generateFile} variant="contained">
+                Generate File
+            </Button>
 
             <TwoColumnList
                 // only display the first 149 characters, the rest are not very useful

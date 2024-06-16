@@ -1,6 +1,7 @@
 [
     {
         "id": 0,
+        "name": "群雄",
         "speed": 6,
         "attackArea": 0,
         "gongIncre": 3,
@@ -14,6 +15,7 @@
     },
     {
         "id": 1,
+        "name": "英雄",
         "speed": 6,
         "attackArea": 1,
         "gongIncre": 3,
@@ -27,6 +29,7 @@
     },
     {
         "id": 2,
+        "name": "霸王",
         "speed": 7,
         "attackArea": 1,
         "gongIncre": 3,
@@ -40,6 +43,7 @@
     },
     {
         "id": 3,
+        "name": "轻步兵",
         "speed": 4,
         "attackArea": 1,
         "gongIncre": 2,
@@ -53,6 +57,7 @@
     },
     {
         "id": 4,
+        "name": "重步兵",
         "speed": 4,
         "attackArea": 1,
         "gongIncre": 2,
@@ -66,6 +71,7 @@
     },
     {
         "id": 5,
+        "name": "近卫兵",
         "speed": 5,
         "attackArea": 1,
         "gongIncre": 2,
@@ -79,6 +85,7 @@
     },
     {
         "id": 6,
+        "name": "弓兵",
         "speed": 4,
         "attackArea": 2,
         "gongIncre": 3,
@@ -92,6 +99,7 @@
     },
     {
         "id": 7,
+        "name": "弩兵",
         "speed": 4,
         "attackArea": 3,
         "gongIncre": 3,
@@ -105,6 +113,7 @@
     },
     {
         "id": 8,
+        "name": "连弩兵",
         "speed": 5,
         "attackArea": 4,
         "gongIncre": 3,
@@ -118,6 +127,7 @@
     },
     {
         "id": 9,
+        "name": "轻骑兵",
         "speed": 6,
         "attackArea": 0,
         "gongIncre": 4,
@@ -131,6 +141,7 @@
     },
     {
         "id": 10,
+        "name": "重骑兵",
         "speed": 6,
         "attackArea": 0,
         "gongIncre": 4,
@@ -144,6 +155,7 @@
     },
     {
         "id": 11,
+        "name": "亲卫队",
         "speed": 7,
         "attackArea": 1,
         "gongIncre": 4,
@@ -157,6 +169,7 @@
     },
     {
         "id": 12,
+        "name": "弓骑兵",
         "speed": 6,
         "attackArea": 9,
         "gongIncre": 4,
@@ -170,6 +183,7 @@
     },
     {
         "id": 13,
+        "name": "弩骑兵",
         "speed": 6,
         "attackArea": 2,
         "gongIncre": 4,
@@ -183,6 +197,7 @@
     },
     {
         "id": 14,
+        "name": "连弩骑兵",
         "speed": 7,
         "attackArea": 3,
         "gongIncre": 4,
@@ -196,6 +211,7 @@
     },
     {
         "id": 15,
+        "name": "轻炮车",
         "speed": 3,
         "attackArea": 7,
         "gongIncre": 4,
@@ -209,6 +225,7 @@
     },
     {
         "id": 16,
+        "name": "重炮车",
         "speed": 3,
         "attackArea": 7,
         "gongIncre": 4,
@@ -222,6 +239,7 @@
     },
     {
         "id": 17,
+        "name": "霹雳车",
         "speed": 4,
         "attackArea": 8,
         "gongIncre": 4,
@@ -235,6 +253,7 @@
     },
     {
         "id": 18,
+        "name": "武术家",
         "speed": 5,
         "attackArea": 0,
         "gongIncre": 3,
@@ -248,6 +267,7 @@
     },
     {
         "id": 19,
+        "name": "拳士",
         "speed": 5,
         "attackArea": 1,
         "gongIncre": 3,
@@ -261,6 +281,7 @@
     },
     {
         "id": 20,
+        "name": "拳圣",
         "speed": 6,
         "attackArea": 1,
         "gongIncre": 3,
@@ -274,6 +295,7 @@
     },
     {
         "id": 21,
+        "name": "贼兵",
         "speed": 5,
         "attackArea": 1,
         "gongIncre": 4,
@@ -287,6 +309,7 @@
     },
     {
         "id": 22,
+        "name": "义贼",
         "speed": 5,
         "attackArea": 1,
         "gongIncre": 4,
@@ -300,6 +323,7 @@
     },
     {
         "id": 23,
+        "name": "豪杰",
         "speed": 6,
         "attackArea": 1,
         "gongIncre": 4,
@@ -313,6 +337,7 @@
     },
     {
         "id": 24,
+        "name": "策士",
         "speed": 4,
         "attackArea": 0,
         "gongIncre": 2,
@@ -326,6 +351,7 @@
     },
     {
         "id": 25,
+        "name": "参谋",
         "speed": 4,
         "attackArea": 0,
         "gongIncre": 2,
@@ -339,6 +365,7 @@
     },
     {
         "id": 26,
+        "name": "军师",
         "speed": 5,
         "attackArea": 0,
         "gongIncre": 2,
@@ -352,6 +379,7 @@
     },
     {
         "id": 27,
+        "name": "风水士",
         "speed": 4,
         "attackArea": 0,
         "gongIncre": 1,
@@ -365,6 +393,7 @@
     },
     {
         "id": 28,
+        "name": "方术士",
         "speed": 5,
         "attackArea": 0,
         "gongIncre": 1,
@@ -378,6 +407,7 @@
     },
     {
         "id": 29,
+        "name": "仙术士",
         "speed": 6,
         "attackArea": 0,
         "gongIncre": 1,
@@ -391,6 +421,7 @@
     },
     {
         "id": 30,
+        "name": "道士",
         "speed": 4,
         "attackArea": 0,
         "gongIncre": 1,
@@ -404,6 +435,7 @@
     },
     {
         "id": 31,
+        "name": "幻术士",
         "speed": 4,
         "attackArea": 0,
         "gongIncre": 1,
@@ -417,6 +449,7 @@
     },
     {
         "id": 32,
+        "name": "妖术士",
         "speed": 5,
         "attackArea": 0,
         "gongIncre": 1,
@@ -430,6 +463,7 @@
     },
     {
         "id": 33,
+        "name": "骑马策士",
         "speed": 6,
         "attackArea": 0,
         "gongIncre": 3,
@@ -443,6 +477,7 @@
     },
     {
         "id": 34,
+        "name": "骑马参谋",
         "speed": 6,
         "attackArea": 0,
         "gongIncre": 3,
@@ -456,6 +491,7 @@
     },
     {
         "id": 35,
+        "name": "骑马军师",
         "speed": 7,
         "attackArea": 0,
         "gongIncre": 3,
@@ -469,6 +505,7 @@
     },
     {
         "id": 36,
+        "name": "舞娘",
         "speed": 5,
         "attackArea": 0,
         "gongIncre": 3,
@@ -482,6 +519,7 @@
     },
     {
         "id": 37,
+        "name": "舞姬",
         "speed": 5,
         "attackArea": 1,
         "gongIncre": 3,
@@ -495,6 +533,7 @@
     },
     {
         "id": 38,
+        "name": "巫女",
         "speed": 6,
         "attackArea": 1,
         "gongIncre": 3,
@@ -508,6 +547,7 @@
     },
     {
         "id": 39,
+        "name": "西凉骑兵",
         "speed": 6,
         "attackArea": 1,
         "gongIncre": 4,
@@ -521,6 +561,7 @@
     },
     {
         "id": 40,
+        "name": "黄巾军",
         "speed": 4,
         "attackArea": 0,
         "gongIncre": 2,
@@ -534,6 +575,7 @@
     },
     {
         "id": 41,
+        "name": "海盗",
         "speed": 5,
         "attackArea": 1,
         "gongIncre": 4,
@@ -547,6 +589,7 @@
     },
     {
         "id": 42,
+        "name": "驯熊师",
         "speed": 4,
         "attackArea": 1,
         "gongIncre": 4,
@@ -560,6 +603,7 @@
     },
     {
         "id": 43,
+        "name": "驯虎师",
         "speed": 5,
         "attackArea": 0,
         "gongIncre": 3,
@@ -573,6 +617,7 @@
     },
     {
         "id": 44,
+        "name": "都督",
         "speed": 5,
         "attackArea": 0,
         "gongIncre": 3,
@@ -586,6 +631,7 @@
     },
     {
         "id": 45,
+        "name": "咒术士",
         "speed": 5,
         "attackArea": 0,
         "gongIncre": 1,
@@ -599,6 +645,7 @@
     },
     {
         "id": 46,
+        "name": "仙人",
         "speed": 7,
         "attackArea": 0,
         "gongIncre": 1,
@@ -612,6 +659,7 @@
     },
     {
         "id": 47,
+        "name": "辎重队",
         "speed": 4,
         "attackArea": 11,
         "gongIncre": 1,
@@ -625,6 +673,7 @@
     },
     {
         "id": 48,
+        "name": "粮草队",
         "speed": 4,
         "attackArea": 11,
         "gongIncre": 1,
@@ -638,6 +687,7 @@
     },
     {
         "id": 49,
+        "name": "木人",
         "speed": 4,
         "attackArea": 0,
         "gongIncre": 3,
@@ -651,6 +701,7 @@
     },
     {
         "id": 50,
+        "name": "土偶",
         "speed": 4,
         "attackArea": 0,
         "gongIncre": 4,
@@ -664,6 +715,7 @@
     },
     {
         "id": 51,
+        "name": "皇帝",
         "speed": 4,
         "attackArea": 11,
         "gongIncre": 1,
@@ -677,6 +729,7 @@
     },
     {
         "id": 52,
+        "name": "百姓",
         "speed": 4,
         "attackArea": 11,
         "gongIncre": 1,
