@@ -1,18 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import items from './data/Item.json'
 import troop from './data/troop.json'
 import {
     Paper,
+    Tab,
     Table,
     TableBody,
     TableCell,
     TableContainer,
     TableHead,
     TableRow,
+    Tabs,
     Typography,
 } from '@mui/material'
 
 const TwoColumnList = ({ data, selected, updateSelected, updateData }) => {
+    const [activeTab, setActiveTab] = useState(0)
+    const [belongs, setBelongs] = useState([])
+
+    useEffect(() => {
+        setBelongs([...new Set(data.map((item) => item.belongTo))])
+    }, [data])
+
     const handleLeftClick = (id) => {
         // add one to selected
         updateSelected([...selected, id].sort((a, b) => a - b))
@@ -83,18 +92,47 @@ const TwoColumnList = ({ data, selected, updateSelected, updateData }) => {
         <div style={{ display: 'flex' }}>
             <div style={{ flex: 1 }}>
                 <Typography variant="h4">Available Characters</Typography>
-                <ul>
-                    {data
-                        .filter((item) => !selected.includes(item.id))
-                        .map((item) => (
-                            <li
-                                key={item.id}
-                                onClick={() => handleLeftClick(item.id)}
+                <Tabs
+                    value={activeTab}
+                    onChange={(event, newValue) => setActiveTab(newValue)}
+                >
+                    {belongs.map((belong) => (
+                        <Tab label={`${belong}`} id={`tab-${belong}`} />
+                    ))}
+                </Tabs>
+                {(() => {
+                    const temp = []
+                    for (let i = 0; i < belongs.length; i++) {
+                        temp.push(
+                            <div
+                                role="tabpanel"
+                                index={i}
+                                hidden={activeTab !== i}
+                                id={`tab-${belongs[i]}`}
                             >
-                                {item.name}
-                            </li>
-                        ))}
-                </ul>
+                                <ul>
+                                    {data
+                                        .filter(
+                                            (item) =>
+                                                !selected.includes(item.id) &&
+                                                item.belongTo === belongs[i]
+                                        )
+                                        .map((item) => (
+                                            <li
+                                                key={item.id}
+                                                onClick={() =>
+                                                    handleLeftClick(item.id)
+                                                }
+                                            >
+                                                {item.name}
+                                            </li>
+                                        ))}
+                                </ul>
+                            </div>
+                        )
+                    }
+                    return temp
+                })()}
             </div>
             <div style={{ flex: 2 }}>
                 <Typography variant="h4">

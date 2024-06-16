@@ -9,7 +9,8 @@
         "yun": 42,
         "HP": 102,
         "MP": 30,
-        "troop_type": 0
+        "troop_type": 0,
+        "belongTo": "wei"
     },
     {
         "id": 1,
@@ -21,7 +22,8 @@
         "yun": 33,
         "HP": 106,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wei"
     },
     {
         "id": 2,
@@ -33,7 +35,8 @@
         "yun": 47,
         "HP": 103,
         "MP": 18,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wei"
     },
     {
         "id": 3,
@@ -45,7 +48,8 @@
         "yun": 31,
         "HP": 107,
         "MP": 12,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wei"
     },
     {
         "id": 4,
@@ -57,7 +61,8 @@
         "yun": 30,
         "HP": 102,
         "MP": 8,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wei"
     },
     {
         "id": 5,
@@ -69,7 +74,8 @@
         "yun": 31,
         "HP": 100,
         "MP": 14,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wei"
     },
     {
         "id": 6,
@@ -81,7 +87,8 @@
         "yun": 39,
         "HP": 105,
         "MP": 17,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "wei"
     },
     {
         "id": 7,
@@ -93,7 +100,8 @@
         "yun": 46,
         "HP": 102,
         "MP": 16,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "wei"
     },
     {
         "id": 8,
@@ -105,7 +113,8 @@
         "yun": 50,
         "HP": 101,
         "MP": 21,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "wei"
     },
     {
         "id": 9,
@@ -117,7 +126,8 @@
         "yun": 30,
         "HP": 120,
         "MP": 11,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "wei"
     },
     {
         "id": 10,
@@ -129,7 +139,8 @@
         "yun": 43,
         "HP": 118,
         "MP": 15,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "wei"
     },
     {
         "id": 11,
@@ -141,7 +152,8 @@
         "yun": 28,
         "HP": 114,
         "MP": 17,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "wei"
     },
     {
         "id": 12,
@@ -153,7 +165,8 @@
         "yun": 35,
         "HP": 110,
         "MP": 13,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "wei"
     },
     {
         "id": 13,
@@ -165,7 +178,8 @@
         "yun": 48,
         "HP": 103,
         "MP": 11,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "wei"
     },
     {
         "id": 14,
@@ -177,7 +191,8 @@
         "yun": 49,
         "HP": 96,
         "MP": 14,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "wei"
     },
     {
         "id": 15,
@@ -189,7 +204,8 @@
         "yun": 49,
         "HP": 119,
         "MP": 21,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "wei"
     },
     {
         "id": 16,
@@ -201,7 +217,8 @@
         "yun": 34,
         "HP": 102,
         "MP": 23,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "wei"
     },
     {
         "id": 17,
@@ -213,7 +230,8 @@
         "yun": 41,
         "HP": 87,
         "MP": 35,
-        "troop_type": 36
+        "troop_type": 36,
+        "belongTo": "wei"
     },
     {
         "id": 18,
@@ -225,7 +243,8 @@
         "yun": 41,
         "HP": 91,
         "MP": 22,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "wei"
     },
     {
         "id": 19,
@@ -237,7 +256,8 @@
         "yun": 21,
         "HP": 100,
         "MP": 48,
-        "troop_type": 33
+        "troop_type": 33,
+        "belongTo": "wei"
     },
     {
         "id": 20,
@@ -249,7 +269,8 @@
         "yun": 31,
         "HP": 96,
         "MP": 41,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "wei"
     },
     {
         "id": 21,
@@ -261,7 +282,8 @@
         "yun": 38,
         "HP": 91,
         "MP": 43,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "wei"
     },
     {
         "id": 22,
@@ -273,7 +295,8 @@
         "yun": 45,
         "HP": 80,
         "MP": 46,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "wei"
     },
     {
         "id": 23,
@@ -285,7 +308,8 @@
         "yun": 39,
         "HP": 88,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "wei"
     },
     {
         "id": 24,
@@ -297,7 +321,8 @@
         "yun": 39,
         "HP": 82,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "wei"
     },
     {
         "id": 25,
@@ -309,7 +334,8 @@
         "yun": 42,
         "HP": 81,
         "MP": 49,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "wei"
     },
     {
         "id": 26,
@@ -321,7 +347,8 @@
         "yun": 41,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wei"
     },
     {
         "id": 27,
@@ -333,7 +360,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wei"
     },
     {
         "id": 28,
@@ -345,7 +373,8 @@
         "yun": 32,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wei"
     },
     {
         "id": 29,
@@ -357,7 +386,8 @@
         "yun": 43,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "wei"
     },
     {
         "id": 30,
@@ -369,7 +399,8 @@
         "yun": 42,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "wei"
     },
     {
         "id": 31,
@@ -381,7 +412,8 @@
         "yun": 48,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wei"
     },
     {
         "id": 32,
@@ -393,7 +425,8 @@
         "yun": 50,
         "HP": 100,
         "MP": 30,
-        "troop_type": 0
+        "troop_type": 0,
+        "belongTo": "shu"
     },
     {
         "id": 33,
@@ -405,7 +438,8 @@
         "yun": 38,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "shu"
     },
     {
         "id": 34,
@@ -417,7 +451,8 @@
         "yun": 32,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "shu"
     },
     {
         "id": 35,
@@ -429,7 +464,8 @@
         "yun": 41,
         "HP": 80,
         "MP": 60,
-        "troop_type": 45
+        "troop_type": 45,
+        "belongTo": "shu"
     },
     {
         "id": 36,
@@ -441,7 +477,8 @@
         "yun": 29,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "shu"
     },
     {
         "id": 37,
@@ -453,7 +490,8 @@
         "yun": 26,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "shu"
     },
     {
         "id": 38,
@@ -465,7 +503,8 @@
         "yun": 29,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "shu"
     },
     {
         "id": 39,
@@ -477,7 +516,8 @@
         "yun": 31,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "shu"
     },
     {
         "id": 40,
@@ -489,7 +529,8 @@
         "yun": 38,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "shu"
     },
     {
         "id": 41,
@@ -501,7 +542,8 @@
         "yun": 37,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "shu"
     },
     {
         "id": 42,
@@ -513,7 +555,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "shu"
     },
     {
         "id": 43,
@@ -525,7 +568,8 @@
         "yun": 38,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "shu"
     },
     {
         "id": 44,
@@ -537,7 +581,8 @@
         "yun": 39,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "shu"
     },
     {
         "id": 45,
@@ -549,7 +594,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "shu"
     },
     {
         "id": 46,
@@ -561,7 +607,8 @@
         "yun": 31,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "shu"
     },
     {
         "id": 47,
@@ -573,7 +620,8 @@
         "yun": 42,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "shu"
     },
     {
         "id": 48,
@@ -585,7 +633,8 @@
         "yun": 29,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "shu"
     },
     {
         "id": 49,
@@ -597,7 +646,8 @@
         "yun": 33,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "shu"
     },
     {
         "id": 50,
@@ -609,7 +659,8 @@
         "yun": 26,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "shu"
     },
     {
         "id": 51,
@@ -621,7 +672,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "shu"
     },
     {
         "id": 52,
@@ -633,7 +685,8 @@
         "yun": 34,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "shu"
     },
     {
         "id": 53,
@@ -645,7 +698,8 @@
         "yun": 33,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "shu"
     },
     {
         "id": 54,
@@ -657,7 +711,8 @@
         "yun": 32,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "shu"
     },
     {
         "id": 55,
@@ -669,7 +724,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "shu"
     },
     {
         "id": 56,
@@ -681,7 +737,8 @@
         "yun": 37,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "shu"
     },
     {
         "id": 57,
@@ -693,7 +750,8 @@
         "yun": 32,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "shu"
     },
     {
         "id": 58,
@@ -705,7 +763,8 @@
         "yun": 21,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "shu"
     },
     {
         "id": 59,
@@ -717,7 +776,8 @@
         "yun": 38,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "shu"
     },
     {
         "id": 60,
@@ -729,7 +789,8 @@
         "yun": 28,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "shu"
     },
     {
         "id": 61,
@@ -741,7 +802,8 @@
         "yun": 26,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "shu"
     },
     {
         "id": 62,
@@ -753,7 +815,8 @@
         "yun": 31,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "shu"
     },
     {
         "id": 63,
@@ -765,7 +828,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "shu"
     },
     {
         "id": 64,
@@ -777,7 +841,8 @@
         "yun": 37,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "shu"
     },
     {
         "id": 65,
@@ -789,7 +854,8 @@
         "yun": 18,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "shu"
     },
     {
         "id": 66,
@@ -801,7 +867,8 @@
         "yun": 31,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "shu"
     },
     {
         "id": 67,
@@ -813,7 +880,8 @@
         "yun": 43,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "shu"
     },
     {
         "id": 68,
@@ -825,7 +893,8 @@
         "yun": 34,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "shu"
     },
     {
         "id": 69,
@@ -837,7 +906,8 @@
         "yun": 27,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "shu"
     },
     {
         "id": 70,
@@ -849,7 +919,8 @@
         "yun": 31,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "shu"
     },
     {
         "id": 71,
@@ -861,7 +932,8 @@
         "yun": 24,
         "HP": 110,
         "MP": 5,
-        "troop_type": 42
+        "troop_type": 42,
+        "belongTo": "shu"
     },
     {
         "id": 72,
@@ -873,7 +945,8 @@
         "yun": 19,
         "HP": 90,
         "MP": 20,
-        "troop_type": 36
+        "troop_type": 36,
+        "belongTo": "shu"
     },
     {
         "id": 73,
@@ -885,7 +958,8 @@
         "yun": 22,
         "HP": 90,
         "MP": 5,
-        "troop_type": 43
+        "troop_type": 43,
+        "belongTo": "shu"
     },
     {
         "id": 74,
@@ -897,7 +971,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "shu"
     },
     {
         "id": 75,
@@ -909,7 +984,8 @@
         "yun": 41,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "shu"
     },
     {
         "id": 76,
@@ -921,7 +997,8 @@
         "yun": 46,
         "HP": 100,
         "MP": 30,
-        "troop_type": 0
+        "troop_type": 0,
+        "belongTo": "wu"
     },
     {
         "id": 77,
@@ -933,7 +1010,8 @@
         "yun": 19,
         "HP": 90,
         "MP": 30,
-        "troop_type": 44
+        "troop_type": 44,
+        "belongTo": "wu"
     },
     {
         "id": 78,
@@ -945,7 +1023,8 @@
         "yun": 34,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "wu"
     },
     {
         "id": 79,
@@ -957,7 +1036,8 @@
         "yun": 36,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "wu"
     },
     {
         "id": 80,
@@ -969,7 +1049,8 @@
         "yun": 23,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "wu"
     },
     {
         "id": 81,
@@ -981,7 +1062,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 30,
-        "troop_type": 44
+        "troop_type": 44,
+        "belongTo": "wu"
     },
     {
         "id": 82,
@@ -993,7 +1075,8 @@
         "yun": 26,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "wu"
     },
     {
         "id": 83,
@@ -1005,7 +1088,8 @@
         "yun": 37,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "wu"
     },
     {
         "id": 84,
@@ -1017,7 +1101,8 @@
         "yun": 27,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "wu"
     },
     {
         "id": 85,
@@ -1029,7 +1114,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wu"
     },
     {
         "id": 86,
@@ -1041,7 +1127,8 @@
         "yun": 29,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "wu"
     },
     {
         "id": 87,
@@ -1053,7 +1140,8 @@
         "yun": 26,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "wu"
     },
     {
         "id": 88,
@@ -1065,7 +1153,8 @@
         "yun": 38,
         "HP": 80,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "wu"
     },
     {
         "id": 89,
@@ -1077,7 +1166,8 @@
         "yun": 39,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "wu"
     },
     {
         "id": 90,
@@ -1089,7 +1179,8 @@
         "yun": 25,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "wu"
     },
     {
         "id": 91,
@@ -1101,7 +1192,8 @@
         "yun": 27,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wu"
     },
     {
         "id": 92,
@@ -1113,7 +1205,8 @@
         "yun": 45,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "wu"
     },
     {
         "id": 93,
@@ -1125,7 +1218,8 @@
         "yun": 34,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "wu"
     },
     {
         "id": 94,
@@ -1137,7 +1231,8 @@
         "yun": 41,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "wu"
     },
     {
         "id": 95,
@@ -1149,7 +1244,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wu"
     },
     {
         "id": 96,
@@ -1161,7 +1257,8 @@
         "yun": 26,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "wu"
     },
     {
         "id": 97,
@@ -1173,7 +1270,8 @@
         "yun": 33,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "wu"
     },
     {
         "id": 98,
@@ -1185,7 +1283,8 @@
         "yun": 28,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "wu"
     },
     {
         "id": 99,
@@ -1197,7 +1296,8 @@
         "yun": 42,
         "HP": 100,
         "MP": 30,
-        "troop_type": 0
+        "troop_type": 0,
+        "belongTo": "wu"
     },
     {
         "id": 100,
@@ -1209,7 +1309,8 @@
         "yun": 26,
         "HP": 100,
         "MP": 30,
-        "troop_type": 0
+        "troop_type": 0,
+        "belongTo": "wu"
     },
     {
         "id": 101,
@@ -1221,7 +1322,8 @@
         "yun": 39,
         "HP": 100,
         "MP": 30,
-        "troop_type": 0
+        "troop_type": 0,
+        "belongTo": "yuan"
     },
     {
         "id": 102,
@@ -1233,7 +1335,8 @@
         "yun": 33,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "yuan"
     },
     {
         "id": 103,
@@ -1245,7 +1348,8 @@
         "yun": 34,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "yuan"
     },
     {
         "id": 104,
@@ -1257,7 +1361,8 @@
         "yun": 24,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "yuan"
     },
     {
         "id": 105,
@@ -1269,7 +1374,8 @@
         "yun": 18,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "yuan"
     },
     {
         "id": 106,
@@ -1281,7 +1387,8 @@
         "yun": 19,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "yuan"
     },
     {
         "id": 107,
@@ -1293,7 +1400,8 @@
         "yun": 39,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "yuan"
     },
     {
         "id": 108,
@@ -1305,7 +1413,8 @@
         "yun": 28,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "yuan"
     },
     {
         "id": 109,
@@ -1317,7 +1426,8 @@
         "yun": 31,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "yuan"
     },
     {
         "id": 110,
@@ -1329,7 +1439,8 @@
         "yun": 19,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "yuan"
     },
     {
         "id": 111,
@@ -1341,7 +1452,8 @@
         "yun": 26,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "yuan"
     },
     {
         "id": 112,
@@ -1353,7 +1465,8 @@
         "yun": 37,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "yuan"
     },
     {
         "id": 113,
@@ -1365,7 +1478,8 @@
         "yun": 28,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "yuan"
     },
     {
         "id": 114,
@@ -1377,7 +1491,8 @@
         "yun": 27,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "yuan"
     },
     {
         "id": 115,
@@ -1389,7 +1504,8 @@
         "yun": 31,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "yuan"
     },
     {
         "id": 116,
@@ -1401,7 +1517,8 @@
         "yun": 37,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "yuan"
     },
     {
         "id": 117,
@@ -1413,7 +1530,8 @@
         "yun": 38,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "yuan"
     },
     {
         "id": 118,
@@ -1425,7 +1543,8 @@
         "yun": 39,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "yuan"
     },
     {
         "id": 119,
@@ -1437,7 +1556,8 @@
         "yun": 42,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 120,
@@ -1449,7 +1569,8 @@
         "yun": 22,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 121,
@@ -1461,7 +1582,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 122,
@@ -1473,7 +1595,8 @@
         "yun": 19,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 123,
@@ -1485,7 +1608,8 @@
         "yun": 27,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 124,
@@ -1497,7 +1621,8 @@
         "yun": 38,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 125,
@@ -1509,7 +1634,8 @@
         "yun": 45,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 126,
@@ -1521,7 +1647,8 @@
         "yun": 26,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 127,
@@ -1533,7 +1660,8 @@
         "yun": 24,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 128,
@@ -1545,7 +1673,8 @@
         "yun": 28,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 129,
@@ -1557,7 +1686,8 @@
         "yun": 32,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 130,
@@ -1569,7 +1699,8 @@
         "yun": 28,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 131,
@@ -1581,7 +1712,8 @@
         "yun": 26,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 132,
@@ -1593,7 +1725,8 @@
         "yun": 31,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 133,
@@ -1605,7 +1738,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 134,
@@ -1617,7 +1751,8 @@
         "yun": 27,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 135,
@@ -1629,7 +1764,8 @@
         "yun": 29,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 136,
@@ -1641,7 +1777,8 @@
         "yun": 26,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 137,
@@ -1653,7 +1790,8 @@
         "yun": 19,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 138,
@@ -1665,7 +1803,8 @@
         "yun": 20,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 139,
@@ -1677,7 +1816,8 @@
         "yun": 18,
         "HP": 110,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 140,
@@ -1689,7 +1829,8 @@
         "yun": 38,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 141,
@@ -1701,7 +1842,8 @@
         "yun": 31,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 142,
@@ -1713,7 +1855,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 143,
@@ -1725,7 +1868,8 @@
         "yun": 28,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 144,
@@ -1737,7 +1881,8 @@
         "yun": 29,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "other"
     },
     {
         "id": 145,
@@ -1749,7 +1894,8 @@
         "yun": 28,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 146,
@@ -1761,7 +1907,8 @@
         "yun": 31,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 147,
@@ -1773,7 +1920,8 @@
         "yun": 28,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 148,
@@ -1785,7 +1933,8 @@
         "yun": 49,
         "HP": 80,
         "MP": 60,
-        "troop_type": 46
+        "troop_type": 46,
+        "belongTo": "other"
     },
     {
         "id": 149,
@@ -1797,7 +1946,8 @@
         "yun": 50,
         "HP": 80,
         "MP": 5,
-        "troop_type": 51
+        "troop_type": 51,
+        "belongTo": "other"
     },
     {
         "id": 150,
@@ -1809,7 +1959,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 151,
@@ -1821,7 +1972,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 152,
@@ -1833,7 +1985,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 153,
@@ -1845,7 +1998,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 154,
@@ -1857,7 +2011,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 155,
@@ -1869,7 +2024,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 156,
@@ -1881,7 +2037,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 157,
@@ -1893,7 +2050,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "other"
     },
     {
         "id": 158,
@@ -1905,7 +2063,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 159,
@@ -1917,7 +2076,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 160,
@@ -1929,7 +2089,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 161,
@@ -1941,7 +2102,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 162,
@@ -1953,7 +2115,8 @@
         "yun": 34,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 163,
@@ -1965,7 +2128,8 @@
         "yun": 50,
         "HP": 100,
         "MP": 30,
-        "troop_type": 0
+        "troop_type": 0,
+        "belongTo": "other"
     },
     {
         "id": 164,
@@ -1977,7 +2141,8 @@
         "yun": 38,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 165,
@@ -1989,7 +2154,8 @@
         "yun": 19,
         "HP": 90,
         "MP": 30,
-        "troop_type": 44
+        "troop_type": 44,
+        "belongTo": "other"
     },
     {
         "id": 166,
@@ -2001,7 +2167,8 @@
         "yun": 42,
         "HP": 100,
         "MP": 30,
-        "troop_type": 0
+        "troop_type": 0,
+        "belongTo": "other"
     },
     {
         "id": 167,
@@ -2013,7 +2180,8 @@
         "yun": 26,
         "HP": 100,
         "MP": 30,
-        "troop_type": 0
+        "troop_type": 0,
+        "belongTo": "other"
     },
     {
         "id": 168,
@@ -2025,7 +2193,8 @@
         "yun": 46,
         "HP": 100,
         "MP": 30,
-        "troop_type": 0
+        "troop_type": 0,
+        "belongTo": "other"
     },
     {
         "id": 169,
@@ -2037,7 +2206,8 @@
         "yun": 23,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 170,
@@ -2049,7 +2219,8 @@
         "yun": 41,
         "HP": 80,
         "MP": 60,
-        "troop_type": 45
+        "troop_type": 45,
+        "belongTo": "other"
     },
     {
         "id": 171,
@@ -2061,7 +2232,8 @@
         "yun": 41,
         "HP": 80,
         "MP": 60,
-        "troop_type": 45
+        "troop_type": 45,
+        "belongTo": "other"
     },
     {
         "id": 172,
@@ -2073,7 +2245,8 @@
         "yun": 41,
         "HP": 80,
         "MP": 60,
-        "troop_type": 45
+        "troop_type": 45,
+        "belongTo": "other"
     },
     {
         "id": 173,
@@ -2085,7 +2258,8 @@
         "yun": 41,
         "HP": 80,
         "MP": 60,
-        "troop_type": 45
+        "troop_type": 45,
+        "belongTo": "other"
     },
     {
         "id": 174,
@@ -2097,7 +2271,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 175,
@@ -2109,7 +2284,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 176,
@@ -2121,7 +2297,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 177,
@@ -2133,7 +2310,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 178,
@@ -2145,7 +2323,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 179,
@@ -2157,7 +2336,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 180,
@@ -2169,7 +2349,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 181,
@@ -2181,7 +2362,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 182,
@@ -2193,7 +2375,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 183,
@@ -2205,7 +2388,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 184,
@@ -2217,7 +2401,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 185,
@@ -2229,7 +2414,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 186,
@@ -2241,7 +2427,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 187,
@@ -2253,7 +2440,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 188,
@@ -2265,7 +2453,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 189,
@@ -2277,7 +2466,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 190,
@@ -2289,7 +2479,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 191,
@@ -2301,7 +2492,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 192,
@@ -2313,7 +2505,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 193,
@@ -2325,7 +2518,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 194,
@@ -2337,7 +2531,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 195,
@@ -2349,7 +2544,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 196,
@@ -2361,7 +2557,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 197,
@@ -2373,7 +2570,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 198,
@@ -2385,7 +2583,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 199,
@@ -2397,7 +2596,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 200,
@@ -2409,7 +2609,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 201,
@@ -2421,7 +2622,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 202,
@@ -2433,7 +2635,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 203,
@@ -2445,7 +2648,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 204,
@@ -2457,7 +2661,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 205,
@@ -2469,7 +2674,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 206,
@@ -2481,7 +2687,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 207,
@@ -2493,7 +2700,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 208,
@@ -2505,7 +2713,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 209,
@@ -2517,7 +2726,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 100,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 210,
@@ -2529,7 +2739,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 211,
@@ -2541,7 +2752,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 212,
@@ -2553,7 +2765,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 213,
@@ -2565,7 +2778,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 214,
@@ -2577,7 +2791,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 215,
@@ -2589,7 +2804,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 216,
@@ -2601,7 +2817,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 217,
@@ -2613,7 +2830,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 218,
@@ -2625,7 +2843,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 219,
@@ -2637,7 +2856,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 220,
@@ -2649,7 +2869,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 221,
@@ -2661,7 +2882,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 222,
@@ -2673,7 +2895,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 223,
@@ -2685,7 +2908,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 224,
@@ -2697,7 +2921,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 225,
@@ -2709,7 +2934,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 226,
@@ -2721,7 +2947,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 227,
@@ -2733,7 +2960,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 228,
@@ -2745,7 +2973,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 229,
@@ -2757,7 +2986,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 230,
@@ -2769,7 +2999,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 231,
@@ -2781,7 +3012,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 232,
@@ -2793,7 +3025,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 233,
@@ -2805,7 +3038,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 10,
-        "troop_type": 3
+        "troop_type": 3,
+        "belongTo": "other"
     },
     {
         "id": 234,
@@ -2817,7 +3051,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 235,
@@ -2829,7 +3064,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 236,
@@ -2841,7 +3077,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 237,
@@ -2853,7 +3090,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 238,
@@ -2865,7 +3103,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 239,
@@ -2877,7 +3116,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 240,
@@ -2889,7 +3129,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 241,
@@ -2901,7 +3142,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 242,
@@ -2913,7 +3155,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 243,
@@ -2925,7 +3168,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 244,
@@ -2937,7 +3181,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 245,
@@ -2949,7 +3194,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 246,
@@ -2961,7 +3207,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 247,
@@ -2973,7 +3220,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 248,
@@ -2985,7 +3233,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 249,
@@ -2997,7 +3246,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 250,
@@ -3009,7 +3259,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 251,
@@ -3021,7 +3272,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 252,
@@ -3033,7 +3285,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 253,
@@ -3045,7 +3298,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 254,
@@ -3057,7 +3311,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 255,
@@ -3069,7 +3324,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 256,
@@ -3081,7 +3337,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 257,
@@ -3093,7 +3350,8 @@
         "yun": 40,
         "HP": 90,
         "MP": 10,
-        "troop_type": 6
+        "troop_type": 6,
+        "belongTo": "other"
     },
     {
         "id": 258,
@@ -3105,7 +3363,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 259,
@@ -3117,7 +3376,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 260,
@@ -3129,7 +3389,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 261,
@@ -3141,7 +3402,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 262,
@@ -3153,7 +3415,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 263,
@@ -3165,7 +3428,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 264,
@@ -3177,7 +3441,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 265,
@@ -3189,7 +3454,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 266,
@@ -3201,7 +3467,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 267,
@@ -3213,7 +3480,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 268,
@@ -3225,7 +3493,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 269,
@@ -3237,7 +3506,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 270,
@@ -3249,7 +3519,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 271,
@@ -3261,7 +3532,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 272,
@@ -3273,7 +3545,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 273,
@@ -3285,7 +3558,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 274,
@@ -3297,7 +3571,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 275,
@@ -3309,7 +3584,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 276,
@@ -3321,7 +3597,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 277,
@@ -3333,7 +3610,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 278,
@@ -3345,7 +3623,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 279,
@@ -3357,7 +3636,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 280,
@@ -3369,7 +3649,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 281,
@@ -3381,7 +3662,8 @@
         "yun": 30,
         "HP": 100,
         "MP": 10,
-        "troop_type": 9
+        "troop_type": 9,
+        "belongTo": "other"
     },
     {
         "id": 282,
@@ -3393,7 +3675,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 283,
@@ -3405,7 +3688,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 284,
@@ -3417,7 +3701,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 285,
@@ -3429,7 +3714,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 286,
@@ -3441,7 +3727,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 287,
@@ -3453,7 +3740,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 288,
@@ -3465,7 +3753,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 289,
@@ -3477,7 +3766,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 290,
@@ -3489,7 +3779,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 291,
@@ -3501,7 +3792,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 292,
@@ -3513,7 +3805,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 293,
@@ -3525,7 +3818,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 294,
@@ -3537,7 +3831,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 295,
@@ -3549,7 +3844,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 296,
@@ -3561,7 +3857,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 297,
@@ -3573,7 +3870,8 @@
         "yun": 35,
         "HP": 100,
         "MP": 10,
-        "troop_type": 12
+        "troop_type": 12,
+        "belongTo": "other"
     },
     {
         "id": 298,
@@ -3585,7 +3883,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 299,
@@ -3597,7 +3896,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 300,
@@ -3609,7 +3909,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 301,
@@ -3621,7 +3922,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 302,
@@ -3633,7 +3935,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 303,
@@ -3645,7 +3948,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 304,
@@ -3657,7 +3961,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 305,
@@ -3669,7 +3974,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 306,
@@ -3681,7 +3987,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 307,
@@ -3693,7 +4000,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 308,
@@ -3705,7 +4013,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 309,
@@ -3717,7 +4026,8 @@
         "yun": 35,
         "HP": 90,
         "MP": 10,
-        "troop_type": 15
+        "troop_type": 15,
+        "belongTo": "other"
     },
     {
         "id": 310,
@@ -3729,7 +4039,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "other"
     },
     {
         "id": 311,
@@ -3741,7 +4052,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "other"
     },
     {
         "id": 312,
@@ -3753,7 +4065,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "other"
     },
     {
         "id": 313,
@@ -3765,7 +4078,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "other"
     },
     {
         "id": 314,
@@ -3777,7 +4091,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "other"
     },
     {
         "id": 315,
@@ -3789,7 +4104,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "other"
     },
     {
         "id": 316,
@@ -3801,7 +4117,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "other"
     },
     {
         "id": 317,
@@ -3813,7 +4130,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 18
+        "troop_type": 18,
+        "belongTo": "other"
     },
     {
         "id": 318,
@@ -3825,7 +4143,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 319,
@@ -3837,7 +4156,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 320,
@@ -3849,7 +4169,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 321,
@@ -3861,7 +4182,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 322,
@@ -3873,7 +4195,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 323,
@@ -3885,7 +4208,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 324,
@@ -3897,7 +4221,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 325,
@@ -3909,7 +4234,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 326,
@@ -3921,7 +4247,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 327,
@@ -3933,7 +4260,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 328,
@@ -3945,7 +4273,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 329,
@@ -3957,7 +4286,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 330,
@@ -3969,7 +4299,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 331,
@@ -3981,7 +4312,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 332,
@@ -3993,7 +4325,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 333,
@@ -4005,7 +4338,8 @@
         "yun": 40,
         "HP": 100,
         "MP": 20,
-        "troop_type": 21
+        "troop_type": 21,
+        "belongTo": "other"
     },
     {
         "id": 334,
@@ -4017,7 +4351,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 335,
@@ -4029,7 +4364,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 336,
@@ -4041,7 +4377,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 337,
@@ -4053,7 +4390,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 338,
@@ -4065,7 +4403,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 339,
@@ -4077,7 +4416,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 340,
@@ -4089,7 +4429,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 341,
@@ -4101,7 +4442,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 40,
-        "troop_type": 24
+        "troop_type": 24,
+        "belongTo": "other"
     },
     {
         "id": 342,
@@ -4113,7 +4455,8 @@
         "yun": 35,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "other"
     },
     {
         "id": 343,
@@ -4125,7 +4468,8 @@
         "yun": 35,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "other"
     },
     {
         "id": 344,
@@ -4137,7 +4481,8 @@
         "yun": 35,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "other"
     },
     {
         "id": 345,
@@ -4149,7 +4494,8 @@
         "yun": 35,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "other"
     },
     {
         "id": 346,
@@ -4161,7 +4507,8 @@
         "yun": 35,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "other"
     },
     {
         "id": 347,
@@ -4173,7 +4520,8 @@
         "yun": 35,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "other"
     },
     {
         "id": 348,
@@ -4185,7 +4533,8 @@
         "yun": 35,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "other"
     },
     {
         "id": 349,
@@ -4197,7 +4546,8 @@
         "yun": 35,
         "HP": 80,
         "MP": 50,
-        "troop_type": 27
+        "troop_type": 27,
+        "belongTo": "other"
     },
     {
         "id": 350,
@@ -4209,7 +4559,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 351,
@@ -4221,7 +4572,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 352,
@@ -4233,7 +4585,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 353,
@@ -4245,7 +4598,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 354,
@@ -4257,7 +4611,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 355,
@@ -4269,7 +4624,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 356,
@@ -4281,7 +4637,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 357,
@@ -4293,7 +4650,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 40,
-        "troop_type": 30
+        "troop_type": 30,
+        "belongTo": "other"
     },
     {
         "id": 358,
@@ -4305,7 +4663,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 359,
@@ -4317,7 +4676,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 360,
@@ -4329,7 +4689,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 361,
@@ -4341,7 +4702,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 362,
@@ -4353,7 +4715,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 363,
@@ -4365,7 +4728,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 364,
@@ -4377,7 +4741,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 365,
@@ -4389,7 +4754,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 366,
@@ -4401,7 +4767,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 367,
@@ -4413,7 +4780,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 368,
@@ -4425,7 +4793,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 369,
@@ -4437,7 +4806,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 370,
@@ -4449,7 +4819,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 371,
@@ -4461,7 +4832,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 372,
@@ -4473,7 +4845,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 373,
@@ -4485,7 +4858,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 374,
@@ -4497,7 +4871,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 375,
@@ -4509,7 +4884,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 376,
@@ -4521,7 +4897,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 377,
@@ -4533,7 +4910,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 378,
@@ -4545,7 +4923,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 379,
@@ -4557,7 +4936,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 380,
@@ -4569,7 +4949,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 381,
@@ -4581,7 +4962,8 @@
         "yun": 30,
         "HP": 90,
         "MP": 20,
-        "troop_type": 41
+        "troop_type": 41,
+        "belongTo": "other"
     },
     {
         "id": 382,
@@ -4593,7 +4975,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 42
+        "troop_type": 42,
+        "belongTo": "other"
     },
     {
         "id": 383,
@@ -4605,7 +4988,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 42
+        "troop_type": 42,
+        "belongTo": "other"
     },
     {
         "id": 384,
@@ -4617,7 +5001,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 42
+        "troop_type": 42,
+        "belongTo": "other"
     },
     {
         "id": 385,
@@ -4629,7 +5014,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 42
+        "troop_type": 42,
+        "belongTo": "other"
     },
     {
         "id": 386,
@@ -4641,7 +5027,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 42
+        "troop_type": 42,
+        "belongTo": "other"
     },
     {
         "id": 387,
@@ -4653,7 +5040,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 42
+        "troop_type": 42,
+        "belongTo": "other"
     },
     {
         "id": 388,
@@ -4665,7 +5053,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 42
+        "troop_type": 42,
+        "belongTo": "other"
     },
     {
         "id": 389,
@@ -4677,7 +5066,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 42
+        "troop_type": 42,
+        "belongTo": "other"
     },
     {
         "id": 390,
@@ -4689,7 +5079,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 43
+        "troop_type": 43,
+        "belongTo": "other"
     },
     {
         "id": 391,
@@ -4701,7 +5092,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 43
+        "troop_type": 43,
+        "belongTo": "other"
     },
     {
         "id": 392,
@@ -4713,7 +5105,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 43
+        "troop_type": 43,
+        "belongTo": "other"
     },
     {
         "id": 393,
@@ -4725,7 +5118,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 43
+        "troop_type": 43,
+        "belongTo": "other"
     },
     {
         "id": 394,
@@ -4737,7 +5131,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 43
+        "troop_type": 43,
+        "belongTo": "other"
     },
     {
         "id": 395,
@@ -4749,7 +5144,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 43
+        "troop_type": 43,
+        "belongTo": "other"
     },
     {
         "id": 396,
@@ -4761,7 +5157,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 43
+        "troop_type": 43,
+        "belongTo": "other"
     },
     {
         "id": 397,
@@ -4773,7 +5170,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 43
+        "troop_type": 43,
+        "belongTo": "other"
     },
     {
         "id": 398,
@@ -4785,7 +5183,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 47
+        "troop_type": 47,
+        "belongTo": "other"
     },
     {
         "id": 399,
@@ -4797,7 +5196,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 47
+        "troop_type": 47,
+        "belongTo": "other"
     },
     {
         "id": 400,
@@ -4809,7 +5209,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 47
+        "troop_type": 47,
+        "belongTo": "other"
     },
     {
         "id": 401,
@@ -4821,7 +5222,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 47
+        "troop_type": 47,
+        "belongTo": "other"
     },
     {
         "id": 402,
@@ -4833,7 +5235,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 47
+        "troop_type": 47,
+        "belongTo": "other"
     },
     {
         "id": 403,
@@ -4845,7 +5248,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 47
+        "troop_type": 47,
+        "belongTo": "other"
     },
     {
         "id": 404,
@@ -4857,7 +5261,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 47
+        "troop_type": 47,
+        "belongTo": "other"
     },
     {
         "id": 405,
@@ -4869,7 +5274,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 47
+        "troop_type": 47,
+        "belongTo": "other"
     },
     {
         "id": 406,
@@ -4881,7 +5287,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 48
+        "troop_type": 48,
+        "belongTo": "other"
     },
     {
         "id": 407,
@@ -4893,7 +5300,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 48
+        "troop_type": 48,
+        "belongTo": "other"
     },
     {
         "id": 408,
@@ -4905,7 +5313,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 48
+        "troop_type": 48,
+        "belongTo": "other"
     },
     {
         "id": 409,
@@ -4917,7 +5326,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 48
+        "troop_type": 48,
+        "belongTo": "other"
     },
     {
         "id": 410,
@@ -4929,7 +5339,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 48
+        "troop_type": 48,
+        "belongTo": "other"
     },
     {
         "id": 411,
@@ -4941,7 +5352,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 48
+        "troop_type": 48,
+        "belongTo": "other"
     },
     {
         "id": 412,
@@ -4953,7 +5365,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 48
+        "troop_type": 48,
+        "belongTo": "other"
     },
     {
         "id": 413,
@@ -4965,7 +5378,8 @@
         "yun": 30,
         "HP": 80,
         "MP": 10,
-        "troop_type": 48
+        "troop_type": 48,
+        "belongTo": "other"
     },
     {
         "id": 414,
@@ -4977,7 +5391,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 415,
@@ -4989,7 +5404,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 416,
@@ -5001,7 +5417,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 417,
@@ -5013,7 +5430,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 418,
@@ -5025,7 +5443,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 419,
@@ -5037,7 +5456,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 420,
@@ -5049,7 +5469,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 421,
@@ -5061,7 +5482,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 422,
@@ -5073,7 +5495,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 423,
@@ -5085,7 +5508,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 424,
@@ -5097,7 +5521,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 425,
@@ -5109,7 +5534,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 426,
@@ -5121,7 +5547,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 427,
@@ -5133,7 +5560,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 428,
@@ -5145,7 +5573,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 429,
@@ -5157,7 +5586,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 430,
@@ -5169,7 +5599,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 431,
@@ -5181,7 +5612,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 432,
@@ -5193,7 +5625,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 433,
@@ -5205,7 +5638,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 434,
@@ -5217,7 +5651,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 435,
@@ -5229,7 +5664,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 436,
@@ -5241,7 +5677,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 437,
@@ -5253,7 +5690,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 20,
-        "troop_type": 49
+        "troop_type": 49,
+        "belongTo": "other"
     },
     {
         "id": 438,
@@ -5265,7 +5703,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 439,
@@ -5277,7 +5716,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 440,
@@ -5289,7 +5729,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 441,
@@ -5301,7 +5742,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 442,
@@ -5313,7 +5755,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 443,
@@ -5325,7 +5768,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 444,
@@ -5337,7 +5781,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 445,
@@ -5349,7 +5794,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 446,
@@ -5361,7 +5807,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 447,
@@ -5373,7 +5820,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 448,
@@ -5385,7 +5833,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 449,
@@ -5397,7 +5846,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 450,
@@ -5409,7 +5859,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 451,
@@ -5421,7 +5872,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 452,
@@ -5433,7 +5885,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 453,
@@ -5445,7 +5898,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 454,
@@ -5457,7 +5911,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 455,
@@ -5469,7 +5924,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 456,
@@ -5481,7 +5937,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 457,
@@ -5493,7 +5950,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 458,
@@ -5505,7 +5963,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 459,
@@ -5517,7 +5976,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 460,
@@ -5529,7 +5989,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 461,
@@ -5541,7 +6002,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 20,
-        "troop_type": 50
+        "troop_type": 50,
+        "belongTo": "other"
     },
     {
         "id": 462,
@@ -5553,7 +6015,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 463,
@@ -5565,7 +6028,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 464,
@@ -5577,7 +6041,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 465,
@@ -5589,7 +6054,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 466,
@@ -5601,7 +6067,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 467,
@@ -5613,7 +6080,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 468,
@@ -5625,7 +6093,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 469,
@@ -5637,7 +6106,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 470,
@@ -5649,7 +6119,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 471,
@@ -5661,7 +6132,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 472,
@@ -5673,7 +6145,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 473,
@@ -5685,7 +6158,8 @@
         "yun": 30,
         "HP": 110,
         "MP": 5,
-        "troop_type": 39
+        "troop_type": 39,
+        "belongTo": "other"
     },
     {
         "id": 474,
@@ -5697,7 +6171,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 475,
@@ -5709,7 +6184,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 476,
@@ -5721,7 +6197,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 477,
@@ -5733,7 +6210,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 478,
@@ -5745,7 +6223,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 479,
@@ -5757,7 +6236,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 480,
@@ -5769,7 +6249,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 481,
@@ -5781,7 +6262,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 482,
@@ -5793,7 +6275,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 483,
@@ -5805,7 +6288,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 484,
@@ -5817,7 +6301,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 485,
@@ -5829,7 +6314,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 486,
@@ -5841,7 +6327,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 487,
@@ -5853,7 +6340,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 488,
@@ -5865,7 +6353,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 489,
@@ -5877,7 +6366,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 490,
@@ -5889,7 +6379,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 491,
@@ -5901,7 +6392,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 492,
@@ -5913,7 +6405,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 493,
@@ -5925,7 +6418,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 494,
@@ -5937,7 +6431,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 495,
@@ -5949,7 +6444,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 496,
@@ -5961,7 +6457,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 497,
@@ -5973,7 +6470,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 498,
@@ -5985,7 +6483,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 499,
@@ -5997,7 +6496,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 500,
@@ -6009,7 +6509,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 501,
@@ -6021,7 +6522,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 502,
@@ -6033,7 +6535,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 503,
@@ -6045,7 +6548,8 @@
         "yun": 20,
         "HP": 90,
         "MP": 5,
-        "troop_type": 40
+        "troop_type": 40,
+        "belongTo": "other"
     },
     {
         "id": 504,
@@ -6057,7 +6561,8 @@
         "yun": 15,
         "HP": 80,
         "MP": 10,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 505,
@@ -6069,7 +6574,8 @@
         "yun": 15,
         "HP": 80,
         "MP": 10,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 506,
@@ -6081,7 +6587,8 @@
         "yun": 15,
         "HP": 80,
         "MP": 10,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 507,
@@ -6093,7 +6600,8 @@
         "yun": 15,
         "HP": 80,
         "MP": 10,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 508,
@@ -6105,7 +6613,8 @@
         "yun": 15,
         "HP": 80,
         "MP": 10,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 509,
@@ -6117,7 +6626,8 @@
         "yun": 15,
         "HP": 80,
         "MP": 10,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 510,
@@ -6129,7 +6639,8 @@
         "yun": 15,
         "HP": 80,
         "MP": 10,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     },
     {
         "id": 511,
@@ -6141,6 +6652,7 @@
         "yun": 15,
         "HP": 80,
         "MP": 10,
-        "troop_type": 52
+        "troop_type": 52,
+        "belongTo": "other"
     }
 ]
