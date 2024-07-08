@@ -10,6 +10,7 @@ import {
 import {
     Box,
     InputLabel,
+    Switch,
     Table,
     TableBody,
     TableCell,
@@ -18,25 +19,37 @@ import {
     TextField,
     Typography,
 } from '@mui/material'
-import { setAllLevel } from './charactersSlice'
+import { setAllLevel, setLevel, setSameLevelForAll } from './charactersSlice'
 
 const InOurTeam = () => {
     const dispatch = useDispatch()
     const characters = useSelector((state) => state.characters.characters)
     const selectedIds = useSelector((state) => state.characters.selectedIds)
     const level = useSelector((state) => state.characters.level)
+    const sameLevelForAll = useSelector(
+        (state) => state.characters.sameLevelForAll
+    )
 
     const MIN_LEVEL = 1
     const MAX_LEVEL = 50
 
     return (
         <div>
-            <Typography variant="h4">
+            <Typography variant="h5">
                 In Our Team({selectedIds.length})
             </Typography>
 
             <Box display="flex" alignItems="center">
-                <InputLabel htmlFor="level">Level: </InputLabel>
+                <Switch
+                    checked={sameLevelForAll}
+                    onChange={(event) => {
+                        dispatch(setSameLevelForAll(event.target.checked))
+                        dispatch(setAllLevel(level))
+                    }}
+                />
+                <InputLabel htmlFor="level">
+                    All characters have the same level:{' '}
+                </InputLabel>
                 <TextField
                     id="level"
                     type="number"
@@ -47,6 +60,8 @@ const InOurTeam = () => {
                     onChange={(event) => {
                         dispatch(setAllLevel(event.target.value))
                     }}
+                    sx={{ width: '6ch' }}
+                    disabled={!sameLevelForAll}
                 />
             </Box>
 
@@ -77,7 +92,31 @@ const InOurTeam = () => {
                             <TableCell>
                                 {troop[characters[id].troop_type].name}
                             </TableCell>
-                            <TableCell>{characters[id].level}</TableCell>
+                            <TableCell>
+                                <TextField
+                                    id={`${id}-level`}
+                                    type="number"
+                                    size="small"
+                                    min={MIN_LEVEL}
+                                    max={MAX_LEVEL}
+                                    value={characters[id].level}
+                                    onChange={(event) => {
+                                        dispatch(
+                                            setLevel({
+                                                charId: id,
+                                                level: parseInt(
+                                                    event.target.value
+                                                ),
+                                            })
+                                        )
+                                    }}
+                                    inputProps={{
+                                        width: '6ch',
+                                        style: { padding: 0 },
+                                    }}
+                                    disabled={sameLevelForAll}
+                                />
+                            </TableCell>
                             <TableCell>
                                 <select
                                     value={characters[id].weapon}

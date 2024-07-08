@@ -18,6 +18,7 @@ const charactersSlice = createSlice({
         ),
         selectedIds: [0], // select caocao by default
         level: DEFAULT_LEVEL,
+        sameLevelForAll: true,
     },
     reducers: {
         select: (state, action) => {
@@ -77,7 +78,17 @@ const charactersSlice = createSlice({
         },
         setLevel: (state, action) => {
             const { charId, level } = action.payload
-            state.characters[charId] = level_up(state.characters[charId], level)
+            const newLevel = Math.max(
+                MIN_LEVEL,
+                Math.min(MAX_LEVEL, Number(level))
+            )
+            state.characters[charId] = level_up(
+                state.characters[charId],
+                newLevel
+            )
+        },
+        setSameLevelForAll: (state, action) => {
+            state.sameLevelForAll = action.payload
         },
     },
 })
@@ -89,5 +100,7 @@ export const {
     updateArmor,
     updateAcc,
     setAllLevel,
+    setLevel,
+    setSameLevelForAll,
 } = charactersSlice.actions
 export default charactersSlice.reducer

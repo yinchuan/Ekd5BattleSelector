@@ -15,7 +15,7 @@ const AvailableChracters = () => {
     }, [characters])
     return (
         <div>
-            <Typography variant="h4">Available Characters</Typography>
+            <Typography variant="h5">Available Characters</Typography>
             <Tabs
                 value={activeTab}
                 onChange={(event, newValue) => setActiveTab(newValue)}
