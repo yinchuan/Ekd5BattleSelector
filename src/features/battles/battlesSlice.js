@@ -8,7 +8,7 @@ const battlesSlice = createSlice({
     name: 'battles',
     initialState: {
         redOrBlue: RED,
-        battleId: 2,
+        battleId: 1,
         battles: battles,
     },
     reducers: {
