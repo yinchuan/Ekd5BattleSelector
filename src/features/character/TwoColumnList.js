@@ -2,275 +2,265 @@ import React, { useEffect, useState } from 'react'
 import items from '../../data/Item.json'
 import troop from '../../data/troop.json'
 import {
-    Paper,
+    InputLabel,
     Tab,
     Table,
     TableBody,
     TableCell,
-    TableContainer,
     TableHead,
     TableRow,
     Tabs,
+    TextField,
     Typography,
 } from '@mui/material'
+import { useDispatch, useSelector } from 'react-redux'
+import {
+    select,
+    deSelect,
+    updateWeapon,
+    updateArmor,
+    updateAcc,
+    setAllLevel,
+} from './charactersSlice'
 
-const TwoColumnList = ({ data, selected, updateSelected, updateData }) => {
+const TwoColumnList = () => {
+    const dispatch = useDispatch()
+    const level = useSelector((state) => state.characters.level)
+    const characters = useSelector((state) => state.characters.characters)
+    const selectedIds = useSelector((state) => state.characters.selectedIds)
+
     const [activeTab, setActiveTab] = useState(0)
     const [belongs, setBelongs] = useState([])
 
     useEffect(() => {
-        setBelongs([...new Set(data.map((item) => item.belongTo))])
-    }, [data])
+        setBelongs([...new Set(characters.map((item) => item.belongTo))])
+    }, [characters])
 
-    const handleLeftClick = (id) => {
-        // add one to selected
-        updateSelected([...selected, id].sort((a, b) => a - b))
-    }
-
-    const handleRightClick = (id) => {
-        // always keep 曹操 selected
-        if (id === 0) return
-        updateSelected(selected.filter((item) => item !== id))
-    }
-
-    const updateWeapon = (charId, weaponId) => {
-        let weapon = 0xff
-        let weaponLv = 0
-        let weaponExp = 0
-        if (weaponId !== -1) {
-            weapon = weaponId
-            weaponLv = items[weaponId].isSpecial === 1 ? 9 : 3
-            weaponExp = 0xff
-        }
-        updateData(
-            data.map((iter) =>
-                iter.id === charId
-                    ? {
-                          ...iter,
-                          weapon: weapon,
-                          weaponLv: weaponLv,
-                          weaponExp: weaponExp,
-                      }
-                    : iter
-            )
-        )
-    }
-
-    const updateArmor = (charId, armorId) => {
-        let armor = 0xff
-        let armorLv = 0
-        let armorExp = 0
-        if (armorId !== -1) {
-            armor = armorId
-            armorLv = items[armorId].isSpecial === 1 ? 9 : 3
-            armorExp = 0xff
-        }
-        updateData(
-            data.map((iter) =>
-                iter.id === charId
-                    ? {
-                          ...iter,
-                          armor: armor,
-                          armorLv: armorLv,
-                          armorExp: armorExp,
-                      }
-                    : iter
-            )
-        )
-    }
-
-    const updateAcc = (charId, accId) => {
-        const acc = accId === -1 ? 0 : accId
-        updateData(
-            data.map((iter) =>
-                iter.id === charId ? { ...iter, acc: acc } : iter
-            )
-        )
-    }
+    const MIN_LEVEL = 1
+    const MAX_LEVEL = 50
 
     return (
-        <div style={{ display: 'flex' }}>
-            <div style={{ flex: 1 }}>
-                <Typography variant="h4">Available Characters</Typography>
-                <Tabs
-                    value={activeTab}
-                    onChange={(event, newValue) => setActiveTab(newValue)}
-                >
-                    {belongs.map((belong) => (
-                        <Tab label={`${belong}`} id={`tab-${belong}`} />
-                    ))}
-                </Tabs>
-                {(() => {
-                    const temp = []
-                    for (let i = 0; i < belongs.length; i++) {
-                        temp.push(
-                            <div
-                                role="tabpanel"
-                                index={i}
-                                hidden={activeTab !== i}
-                                id={`tab-${belongs[i]}`}
-                            >
-                                <ul>
-                                    {data
-                                        .filter(
-                                            (item) =>
-                                                !selected.includes(item.id) &&
-                                                item.belongTo === belongs[i]
-                                        )
-                                        .map((item) => (
-                                            <li
-                                                key={item.id}
-                                                onClick={() =>
-                                                    handleLeftClick(item.id)
-                                                }
-                                            >
-                                                {item.name}
-                                            </li>
-                                        ))}
-                                </ul>
-                            </div>
-                        )
-                    }
-                    return temp
-                })()}
-            </div>
-            <div style={{ flex: 2 }}>
-                <Typography variant="h4">
-                    In Our Team({selected.length})
-                </Typography>
-                <Table size="small">
-                    <TableHead>
-                        <TableRow>
-                            <TableCell>Name</TableCell>
-                            <TableCell>Troop</TableCell>
-                            <TableCell>Level</TableCell>
-                            <TableCell>Weapon</TableCell>
-                            <TableCell>Armor</TableCell>
-                            <TableCell>Acc</TableCell>
-                            <TableCell>HP</TableCell>
-                            <TableCell>MP</TableCell>
-                            <TableCell>gong</TableCell>
-                            <TableCell>jing</TableCell>
-                            <TableCell>fang</TableCell>
-                            <TableCell>bao</TableCell>
-                            <TableCell>shi</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {selected.map((id) => (
-                            <TableRow>
-                                <TableCell onClick={() => handleRightClick(id)}>
-                                    {data[id].name}
-                                </TableCell>
-                                <TableCell>
-                                    {troop[data[id].troop_type].name}
-                                </TableCell>
-                                <TableCell>{data[id].level}</TableCell>
-                                <TableCell>
-                                    <select
-                                        value={data[id].weapon}
-                                        onChange={(e) => {
-                                            updateWeapon(
-                                                id,
-                                                parseInt(e.target.value)
-                                            )
-                                        }}
-                                    >
-                                        <option key={id + '-1'} value="-1">
-                                            -
-                                        </option>
-                                        {items
-                                            .filter(
-                                                (item) =>
-                                                    item.type <= 13 &&
-                                                    troop[data[id].troop_type]
-                                                        .canUseItem[item.type]
-                                            )
-                                            .map((item) => (
-                                                <option
-                                                    key={id + '_' + item.id}
-                                                    value={item.id}
-                                                >
-                                                    {item.name}
-                                                </option>
-                                            ))}
-                                    </select>
-                                </TableCell>
-                                <TableCell>
-                                    <select
-                                        value={data[id].armor}
-                                        onChange={(e) => {
-                                            updateArmor(
-                                                id,
-                                                parseInt(e.target.value)
-                                            )
-                                        }}
-                                    >
-                                        <option key={id + '-1'} value="-1">
-                                            -
-                                        </option>
-                                        {items
-                                            .filter(
-                                                (item) =>
-                                                    item.type > 13 &&
-                                                    item.type <= 17 &&
-                                                    troop[data[id].troop_type]
-                                                        .canUseItem[item.type]
-                                            )
-                                            .map((item) => (
-                                                <option
-                                                    key={id + '_' + item.id}
-                                                    value={item.id}
-                                                >
-                                                    {item.name}
-                                                </option>
-                                            ))}
-                                    </select>
-                                </TableCell>
-                                <TableCell>
-                                    <select
-                                        value={data[id].acc}
-                                        onChange={(e) => {
-                                            updateAcc(
-                                                id,
-                                                parseInt(e.target.value)
-                                            )
-                                        }}
-                                    >
-                                        <option key={id + '-1'} value="-1">
-                                            -
-                                        </option>
-                                        {items
-                                            .filter(
-                                                (item) =>
-                                                    item.type >= 18 &&
-                                                    item.type <= 62 &&
-                                                    (Math.floor(
-                                                        data[id].troop_type / 3
-                                                    ) === item.incre ||
-                                                        item.incre === 255)
-                                            )
-                                            .map((item) => (
-                                                <option
-                                                    key={id + '_' + item.id}
-                                                    value={item.id}
-                                                >
-                                                    {item.name}
-                                                </option>
-                                            ))}
-                                    </select>
-                                </TableCell>
-                                <TableCell>{data[id].HP}</TableCell>
-                                <TableCell>{data[id].MP}</TableCell>
-                                <TableCell>{data[id].gong}</TableCell>
-                                <TableCell>{data[id].jing}</TableCell>
-                                <TableCell>{data[id].fang}</TableCell>
-                                <TableCell>{data[id].bao}</TableCell>
-                                <TableCell>{data[id].shi}</TableCell>
-                            </TableRow>
+        <div>
+            <InputLabel id="levelLablel">Level: </InputLabel>
+            <TextField
+                id="level"
+                type="number"
+                min={MIN_LEVEL}
+                max={MAX_LEVEL}
+                value={level}
+                onChange={(event) => {
+                    dispatch(setAllLevel(event.target.value))
+                }}
+            />
+
+            <div style={{ display: 'flex' }}>
+                <div style={{ flex: 1 }}>
+                    <Typography variant="h4">Available Characters</Typography>
+                    <Tabs
+                        value={activeTab}
+                        onChange={(event, newValue) => setActiveTab(newValue)}
+                    >
+                        {belongs.map((belong) => (
+                            <Tab label={`${belong}`} id={`tab-${belong}`} />
                         ))}
-                    </TableBody>
-                </Table>
+                    </Tabs>
+                    {(() => {
+                        const temp = []
+                        for (let i = 0; i < belongs.length; i++) {
+                            temp.push(
+                                <div
+                                    role="tabpanel"
+                                    index={i}
+                                    hidden={activeTab !== i}
+                                    id={`tab-${belongs[i]}`}
+                                >
+                                    <ul>
+                                        {characters
+                                            .filter(
+                                                (item) =>
+                                                    !selectedIds.includes(
+                                                        item.id
+                                                    ) &&
+                                                    item.belongTo === belongs[i]
+                                            )
+                                            .map((item) => (
+                                                <li
+                                                    key={item.id}
+                                                    onClick={() =>
+                                                        dispatch(
+                                                            select(item.id)
+                                                        )
+                                                    }
+                                                >
+                                                    {item.name}
+                                                </li>
+                                            ))}
+                                    </ul>
+                                </div>
+                            )
+                        }
+                        return temp
+                    })()}
+                </div>
+                <div style={{ flex: 2 }}>
+                    <Typography variant="h4">
+                        In Our Team({selectedIds.length})
+                    </Typography>
+                    <Table size="small">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell>Name</TableCell>
+                                <TableCell>Troop</TableCell>
+                                <TableCell>Level</TableCell>
+                                <TableCell>Weapon</TableCell>
+                                <TableCell>Armor</TableCell>
+                                <TableCell>Acc</TableCell>
+                                <TableCell>HP</TableCell>
+                                <TableCell>MP</TableCell>
+                                <TableCell>gong</TableCell>
+                                <TableCell>jing</TableCell>
+                                <TableCell>fang</TableCell>
+                                <TableCell>bao</TableCell>
+                                <TableCell>shi</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            {selectedIds.map((id) => (
+                                <TableRow>
+                                    <TableCell
+                                        onClick={() => dispatch(deSelect(id))}
+                                    >
+                                        {characters[id].name}
+                                    </TableCell>
+                                    <TableCell>
+                                        {troop[characters[id].troop_type].name}
+                                    </TableCell>
+                                    <TableCell>
+                                        {characters[id].level}
+                                    </TableCell>
+                                    <TableCell>
+                                        <select
+                                            value={characters[id].weapon}
+                                            onChange={(e) => {
+                                                dispatch(
+                                                    updateWeapon({
+                                                        charId: id,
+                                                        weaponId: parseInt(
+                                                            e.target.value
+                                                        ),
+                                                    })
+                                                )
+                                            }}
+                                        >
+                                            <option key={id + '-1'} value="-1">
+                                                -
+                                            </option>
+                                            {items
+                                                .filter(
+                                                    (item) =>
+                                                        item.type <= 13 &&
+                                                        troop[
+                                                            characters[id]
+                                                                .troop_type
+                                                        ].canUseItem[item.type]
+                                                )
+                                                .map((item) => (
+                                                    <option
+                                                        key={id + '_' + item.id}
+                                                        value={item.id}
+                                                    >
+                                                        {item.name}
+                                                    </option>
+                                                ))}
+                                        </select>
+                                    </TableCell>
+                                    <TableCell>
+                                        <select
+                                            value={characters[id].armor}
+                                            onChange={(e) => {
+                                                dispatch(
+                                                    updateArmor({
+                                                        charId: id,
+                                                        armorId: parseInt(
+                                                            e.target.value
+                                                        ),
+                                                    })
+                                                )
+                                            }}
+                                        >
+                                            <option key={id + '-1'} value="-1">
+                                                -
+                                            </option>
+                                            {items
+                                                .filter(
+                                                    (item) =>
+                                                        item.type > 13 &&
+                                                        item.type <= 17 &&
+                                                        troop[
+                                                            characters[id]
+                                                                .troop_type
+                                                        ].canUseItem[item.type]
+                                                )
+                                                .map((item) => (
+                                                    <option
+                                                        key={id + '_' + item.id}
+                                                        value={item.id}
+                                                    >
+                                                        {item.name}
+                                                    </option>
+                                                ))}
+                                        </select>
+                                    </TableCell>
+                                    <TableCell>
+                                        <select
+                                            value={characters[id].acc}
+                                            onChange={(e) => {
+                                                dispatch(
+                                                    updateAcc({
+                                                        charId: id,
+                                                        accId: parseInt(
+                                                            e.target.value
+                                                        ),
+                                                    })
+                                                )
+                                            }}
+                                        >
+                                            <option key={id + '-1'} value="-1">
+                                                -
+                                            </option>
+                                            {items
+                                                .filter(
+                                                    (item) =>
+                                                        item.type >= 18 &&
+                                                        item.type <= 62 &&
+                                                        (Math.floor(
+                                                            characters[id]
+                                                                .troop_type / 3
+                                                        ) === item.incre ||
+                                                            item.incre === 255)
+                                                )
+                                                .map((item) => (
+                                                    <option
+                                                        key={id + '_' + item.id}
+                                                        value={item.id}
+                                                    >
+                                                        {item.name}
+                                                    </option>
+                                                ))}
+                                        </select>
+                                    </TableCell>
+                                    <TableCell>{characters[id].HP}</TableCell>
+                                    <TableCell>{characters[id].MP}</TableCell>
+                                    <TableCell>{characters[id].gong}</TableCell>
+                                    <TableCell>{characters[id].jing}</TableCell>
+                                    <TableCell>{characters[id].fang}</TableCell>
+                                    <TableCell>{characters[id].bao}</TableCell>
+                                    <TableCell>{characters[id].shi}</TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </div>
             </div>
         </div>
     )

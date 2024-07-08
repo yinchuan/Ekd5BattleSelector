@@ -12,12 +12,7 @@ import {
     Typography,
 } from '@mui/material'
 
-import characters from './data/characters.json'
 import saveFile from './data/Sv01d.e5s'
-import person_addup from './data/person_addup.json'
-import troop_HP_MP from './data/troop_HP_MP.json'
-import troop from './data/troop.json'
-import useLocalStorage from './useLocalStorage'
 import items from './data/Item.json'
 import { useDispatch, useSelector } from 'react-redux'
 import { setSaveId } from './features/saveId/saveIdSlice'
@@ -30,16 +25,8 @@ const App = () => {
     const battleId = useSelector((state) => state.battles.battleId)
     const redOrBlue = useSelector((state) => state.battles.redOrBlue)
     const saveId = useSelector((state) => state.saveId.id)
-
-    const [level, setLevel] = useState(40)
-    const [allCharacters, setAllCharacters] = useLocalStorage(
-        'allCharacters',
-        JSON.parse(JSON.stringify(characters.slice(0, 148)))
-    )
-    const [selectedCharacterIds, setSelectedCharacterIds] = useLocalStorage(
-        'selected',
-        [0]
-    )
+    const allCharacters = useSelector((state) => state.characters.characters)
+    const selectedIds = useSelector((state) => state.characters.selectedIds)
     const [binaryBuffer, setBinaryBuffer] = useState(null)
 
     useEffect(() => {
@@ -52,67 +39,7 @@ const App = () => {
         loadBinaryFile(saveFile)
     }, [])
 
-    useEffect(() => {
-        level_up_all(level)
-    }, [level])
-
-    // how many times 印绶 has been used
-    // related to MP/HP, troop_type
-    const getStampTimes = (level) => {
-        if (level >= 30) {
-            return 2
-        }
-
-        if (level >= 15) {
-            return 1
-        }
-
-        return 0
-    }
-
-    const getTroopId = (troopType) => {
-        return Math.floor(troopType / 3)
-    }
-
-    const getHP = (charId, level) => {
-        let troopId = getTroopId(characters[charId].troop_type) // use original unchanged one
-        let levelForHPMP = level + getStampTimes(level) * 2
-        return (
-            troop_HP_MP[troopId].initHP +
-            (person_addup.hasOwnProperty(allCharacters[charId].name)
-                ? person_addup[allCharacters[charId].name].HP
-                : 0) +
-            troop[allCharacters[charId].troop_type].HPIncre * levelForHPMP
-        )
-    }
-
-    const getMP = (charId, level) => {
-        let troopId = getTroopId(characters[charId].troop_type)
-        let levelForHPMP = level + getStampTimes(level) * 2
-        return (
-            troop_HP_MP[troopId].initMP +
-            (person_addup.hasOwnProperty(allCharacters[charId].name)
-                ? person_addup[allCharacters[charId].name].MP
-                : 0) +
-            troop[allCharacters[charId].troop_type].MPIncre * levelForHPMP
-        )
-    }
-
-    const capabilityIncreByTalent = (n) => {
-        if (n >= 45) return 4
-        if (n >= 35) return 3
-        if (n >= 25) return 2
-        return 1
-    }
-    const getCapability = (talent, troop, level) => {
-        return (
-            talent +
-            Math.floor((capabilityIncreByTalent(talent) + troop) / 2) * level
-        )
-    }
     //
-    const MIN_LEVEL = 1
-    const MAX_LEVEL = 50
     const ITEM_START_ADDRESS = 0x57
     const CHAR_DATA_START = 0x14df
     const CHAR_LEN = 32
@@ -128,62 +55,6 @@ const App = () => {
     const OFFSET_LEVEL = 15
     const OFFSET_EXP = 16
     const STORE_ADDRESS = 0x02af
-
-    const level_up = (item) => {
-        // upgrade troop_type
-        item.level = level
-        item.exp = 0
-        // only type <= 38 can be promoted
-        item.troop_type =
-            characters[item.id].troop_type +
-            (characters[item.id].troop_type <= 38 ? getStampTimes(level) : 0)
-        item.HP = getHP(item.id, level)
-        item.MP = getMP(item.id, level)
-
-        // wu -> gong
-        item.gong = getCapability(
-            item.wu,
-            troop[item.troop_type].gongIncre,
-            level
-        )
-        // tong -> fang, +2
-        item.fang = getCapability(
-            item.tong,
-            troop[item.troop_type].fangIncre,
-            level
-        )
-
-        // zhi -> jing, +3
-        item.jing = getCapability(
-            item.zhi,
-            troop[item.troop_type].jingIncre,
-            level
-        )
-
-        // min -> bao, +4
-        item.bao = getCapability(
-            item.min,
-            troop[item.troop_type].baoIncre,
-            level
-        )
-
-        // yun -> shi, +5
-        item.shi = getCapability(
-            item.yun,
-            troop[item.troop_type].shiIncre,
-            level
-        )
-
-        return item
-    }
-
-    const level_up_all = (l) => {
-        let temp = [...allCharacters]
-        for (let i = 0; i < temp.length; i++) {
-            temp[i] = level_up(temp[i], l)
-        }
-        setAllCharacters(temp)
-    }
 
     // write Chinese string to buffer
     const writeMsg = (view, position, msg) => {
@@ -271,7 +142,7 @@ const App = () => {
         }
 
         // add characters to our team
-        selectedCharacterIds.forEach((id) => {
+        selectedIds.forEach((id) => {
             const item = allCharacters[id]
             const charAddr = CHAR_DATA_START + item.id * CHAR_LEN
 
@@ -360,25 +231,6 @@ const App = () => {
 
             <BattleSelector />
 
-            <InputLabel id="levelLablel">Level: </InputLabel>
-            <TextField
-                id="level"
-                type="number"
-                // labelId="levelLabel"
-                min={MIN_LEVEL}
-                max={MAX_LEVEL}
-                value={level}
-                onChange={(event) => {
-                    setLevel(parseInt(event.target.value))
-                    setLevel(
-                        Math.max(
-                            MIN_LEVEL,
-                            Math.min(MAX_LEVEL, Number(event.target.value))
-                        )
-                    )
-                }}
-            />
-
             <div>
                 <InputLabel id="saveIdLabel">存档到： </InputLabel>
                 <Select
@@ -399,14 +251,7 @@ const App = () => {
                 Generate File
             </Button>
 
-            <TwoColumnList
-                // only display the first 149 characters, the rest are not very useful
-                // data={characters.slice(0, 148)}
-                data={allCharacters}
-                selected={selectedCharacterIds}
-                updateSelected={setSelectedCharacterIds}
-                updateData={setAllCharacters}
-            />
+            <TwoColumnList />
         </div>
     )
 }
