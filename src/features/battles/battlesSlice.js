@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import battles from './data/battles.json'
+import battles from '../../data/battles.json'
 
 const RED = 1
 const BLUE = 2

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
-import BattleSelector from './BattleSelector'
-import TwoColumnList from './TwoColumnList'
+import BattleSelector from './features/battles/BattleSelector'
+import TwoColumnList from './features/character/TwoColumnList'
 
 import {
     Button,
@@ -20,7 +20,7 @@ import troop from './data/troop.json'
 import useLocalStorage from './useLocalStorage'
 import items from './data/Item.json'
 import { useDispatch, useSelector } from 'react-redux'
-import { setSaveId } from './saveIdSlice'
+import { setSaveId } from './features/saveId/saveIdSlice'
 
 const iconv = require('iconv-lite')
 

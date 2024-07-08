@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import battleReducer from './battlesSlice'
-import saveIdReducer from './saveIdSlice'
+import battleReducer from '../features/battles/battlesSlice'
+import saveIdReducer from '../features/saveId/saveIdSlice'
 
 const store = configureStore({
     reducer: {

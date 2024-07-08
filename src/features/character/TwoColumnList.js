@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import items from './data/Item.json'
-import troop from './data/troop.json'
+import items from '../../data/Item.json'
+import troop from '../../data/troop.json'
 import {
     Paper,
     Tab,
