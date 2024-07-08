@@ -23,7 +23,7 @@ import {
     setAllLevel,
 } from './charactersSlice'
 
-const TwoColumnList = () => {
+const Chacracters = () => {
     const dispatch = useDispatch()
     const level = useSelector((state) => state.characters.level)
     const characters = useSelector((state) => state.characters.characters)
@@ -266,4 +266,4 @@ const TwoColumnList = () => {
     )
 }
 
-export default TwoColumnList
+export default Chacracters

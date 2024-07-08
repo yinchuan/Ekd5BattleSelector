@@ -2,7 +2,7 @@ import { Button, InputLabel, MenuItem, Select, Typography } from '@mui/material'
 import { useDispatch, useSelector } from 'react-redux'
 
 import BattleSelector from './features/battles/BattleSelector'
-import TwoColumnList from './features/character/TwoColumnList'
+import Chacracters from './features/character/Characters'
 import { setSaveId } from './features/saveId/saveIdSlice'
 
 import { eFileName, dFileName, generateDFile, generateEFile } from './logic'
@@ -58,7 +58,7 @@ const App = () => {
                 Generate File
             </Button>
 
-            <TwoColumnList />
+            <Chacracters />
         </div>
     )
 }
