@@ -23,11 +23,15 @@ import troop_HP_MP from './data/troop_HP_MP.json'
 import troop from './data/troop.json'
 import useLocalStorage from './useLocalStorage'
 import items from './data/Item.json'
+import { useDispatch, useSelector } from 'react-redux'
+import { red, blue } from './battlesSlice'
 
 const iconv = require('iconv-lite')
 
 const App = () => {
-    const [redOrBlue, setRedOrBlue] = useLocalStorage('redOrBlue', 1) // 1 红，2 蓝
+    const dispatch = useDispatch()
+    const redOrBlue = useSelector((state) => state.battles.redOrBlue)
+
     const [battleId, setBattleId] = useState('1')
     const [saveId, setSaveId] = useState(1)
     const [level, setLevel] = useState(40)
@@ -358,17 +362,13 @@ const App = () => {
             </Typography>
 
             <InputLabel id="colorLabel">选择剧情：</InputLabel>
-            <RadioGroup
-                name="color"
-                // labelId="colorLabel"
-                defaultValue={redOrBlue}
-            >
+            <RadioGroup name="color" defaultValue={redOrBlue}>
                 <FormControlLabel
                     control={<Radio />}
                     label="红线"
                     value={1}
                     onChange={() => {
-                        setRedOrBlue(1)
+                        dispatch(red())
                         setBattleId(1)
                     }}
                 />
@@ -377,7 +377,7 @@ const App = () => {
                     label="蓝线"
                     value={2}
                     onChange={() => {
-                        setRedOrBlue(2)
+                        dispatch(blue())
                         setBattleId(1)
                     }}
                 />
