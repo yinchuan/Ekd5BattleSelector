@@ -12,7 +12,6 @@ import {
     Typography,
 } from '@mui/material'
 
-import battles from './data/battles.json'
 import characters from './data/characters.json'
 import saveFile from './data/Sv01d.e5s'
 import person_addup from './data/person_addup.json'
@@ -27,6 +26,7 @@ const iconv = require('iconv-lite')
 
 const App = () => {
     const dispatch = useDispatch()
+    const battles = useSelector((state) => state.battles.battles)
     const battleId = useSelector((state) => state.battles.battleId)
     const redOrBlue = useSelector((state) => state.battles.redOrBlue)
     const saveId = useSelector((state) => state.saveId.id)
@@ -358,7 +358,7 @@ const App = () => {
                 曹操传 Battle Selector
             </Typography>
 
-            <BattleSelector data={battles} />
+            <BattleSelector />
 
             <InputLabel id="levelLablel">Level: </InputLabel>
             <TextField

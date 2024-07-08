@@ -12,8 +12,9 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { red, blue, selectBattle } from './battlesSlice'
 
-const BattleSelector = ({ data }) => {
+const BattleSelector = () => {
     const dispatch = useDispatch()
+    const battles = useSelector((state) => state.battles.battles)
     const redOrBlue = useSelector((state) => state.battles.redOrBlue)
     const battleId = useSelector((state) => state.battles.battleId)
 
@@ -58,15 +59,15 @@ const BattleSelector = ({ data }) => {
                 onChange={(e) => dispatch(selectBattle(e.target.value))}
                 value={battleId}
             >
-                {Object.keys(data).map((key) => {
+                {Object.keys(battles).map((key) => {
                     // show battles in red line or blue line
-                    if ((data[key].redOrBlue & redOrBlue) === 0) {
+                    if ((battles[key].redOrBlue & redOrBlue) === 0) {
                         return
                     }
 
                     const battleItem = (
                         <MenuItem key={key} value={key}>
-                            {data[key].name}
+                            {battles[key].name}
                         </MenuItem>
                     )
                     const chapter = getChapter(key)

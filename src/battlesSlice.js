@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import battles from './data/battles.json'
 
 const RED = 1
 const BLUE = 2
@@ -8,6 +9,7 @@ const battlesSlice = createSlice({
     initialState: {
         redOrBlue: RED,
         battleId: 2,
+        battles: battles,
     },
     reducers: {
         red: (state) => {
