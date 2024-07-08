@@ -20,14 +20,17 @@ import troop_HP_MP from './data/troop_HP_MP.json'
 import troop from './data/troop.json'
 import useLocalStorage from './useLocalStorage'
 import items from './data/Item.json'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { setSaveId } from './saveIdSlice'
 
 const iconv = require('iconv-lite')
 
 const App = () => {
+    const dispatch = useDispatch()
     const battleId = useSelector((state) => state.battles.battleId)
     const redOrBlue = useSelector((state) => state.battles.redOrBlue)
-    const [saveId, setSaveId] = useState(1)
+    const saveId = useSelector((state) => state.saveId.id)
+
     const [level, setLevel] = useState(40)
     const [allCharacters, setAllCharacters] = useLocalStorage(
         'allCharacters',
@@ -379,10 +382,9 @@ const App = () => {
             <div>
                 <InputLabel id="saveIdLabel">存档到： </InputLabel>
                 <Select
-                    // labelId="saveIdLabel"
                     id="saveId"
                     value={saveId}
-                    onChange={(e) => setSaveId(e.target.value)}
+                    onChange={(e) => dispatch(setSaveId(e.target.value))}
                 >
                     {[...Array(10).keys()].map((n) => (
                         <MenuItem key={n + 1} value={n + 1}>
@@ -392,6 +394,7 @@ const App = () => {
                 </Select>
                 will store to {dFileName(saveId)} and {eFileName(saveId)}.
             </div>
+
             <Button onClick={generateFile} variant="contained">
                 Generate File
             </Button>
