@@ -1,4 +1,7 @@
 import {
+    Box,
+    Divider,
+    FormControl,
     FormControlLabel,
     InputLabel,
     MenuItem,
@@ -32,57 +35,64 @@ const BattleSelector = () => {
     }
 
     return (
-        <div>
-            <InputLabel id="colorLabel">选择剧情：</InputLabel>
-            <RadioGroup name="color" defaultValue={redOrBlue}>
-                <FormControlLabel
-                    control={<Radio />}
-                    label="红线"
-                    value={1}
-                    onChange={() => {
-                        dispatch(red())
-                    }}
-                />
-                <FormControlLabel
-                    control={<Radio />}
-                    label="蓝线"
-                    value={2}
-                    onChange={() => {
-                        dispatch(blue())
-                    }}
-                />
-            </RadioGroup>
+        <Box display="flex" alignItems="center">
+            <Box display="flex" alignItems="center">
+                <InputLabel htmlFor="color">选择剧情:</InputLabel>
+                <RadioGroup name="color" defaultValue={redOrBlue}>
+                    <Box>
+                        <FormControlLabel
+                            control={<Radio />}
+                            label="红线"
+                            value={1}
+                            onChange={() => {
+                                dispatch(red())
+                            }}
+                        />
+                        <FormControlLabel
+                            control={<Radio />}
+                            label="蓝线"
+                            value={2}
+                            onChange={() => {
+                                dispatch(blue())
+                            }}
+                        />
+                    </Box>
+                </RadioGroup>
+            </Box>
 
-            <InputLabel id="battleLabel">关卡: </InputLabel>
-            <Select
-                labelId="battleLabel"
-                onChange={(e) => dispatch(selectBattle(e.target.value))}
-                value={battleId}
-            >
-                {Object.keys(battles).map((key) => {
-                    // show battles in red line or blue line
-                    if ((battles[key].redOrBlue & redOrBlue) === 0) {
-                        return
-                    }
+            <Divider orientation="vertical" sx={{ marginRight: 1 }} />
 
-                    const battleItem = (
-                        <MenuItem key={key} value={key}>
-                            {battles[key].name}
-                        </MenuItem>
-                    )
-                    const chapter = getChapter(key)
+            <FormControl size="small">
+                <Select
+                    id="battle"
+                    onChange={(e) => dispatch(selectBattle(e.target.value))}
+                    value={battleId}
+                >
+                    {Object.keys(battles)
+                        // show battles in red line or blue line
+                        .filter(
+                            (key) => (battles[key].redOrBlue & redOrBlue) !== 0
+                        )
+                        .map((key) => {
+                            const battleItem = (
+                                <MenuItem key={key} value={key}>
+                                    {battles[key].name}
+                                </MenuItem>
+                            )
+                            const chapter = getChapter(key)
 
-                    return chapter > 0
-                        ? [
-                              <Typography variant="h6">
-                                  Chapter {chapter}
-                              </Typography>,
-                              battleItem,
-                          ]
-                        : battleItem
-                })}
-            </Select>
-        </div>
+                            return chapter > 0
+                                ? [
+                                      <Typography variant="h6">
+                                          Chapter {chapter}
+                                      </Typography>,
+                                      battleItem,
+                                  ]
+                                : battleItem
+                        })}
+                </Select>
+            </FormControl>
+        </Box>
     )
 }
 

@@ -8,24 +8,48 @@ import {
     updateAcc,
 } from './charactersSlice'
 import {
+    Box,
+    InputLabel,
     Table,
     TableBody,
     TableCell,
     TableHead,
     TableRow,
+    TextField,
     Typography,
 } from '@mui/material'
+import { setAllLevel } from './charactersSlice'
 
 const InOurTeam = () => {
     const dispatch = useDispatch()
     const characters = useSelector((state) => state.characters.characters)
     const selectedIds = useSelector((state) => state.characters.selectedIds)
+    const level = useSelector((state) => state.characters.level)
+
+    const MIN_LEVEL = 1
+    const MAX_LEVEL = 50
 
     return (
         <div>
             <Typography variant="h4">
                 In Our Team({selectedIds.length})
             </Typography>
+
+            <Box display="flex" alignItems="center">
+                <InputLabel htmlFor="level">Level: </InputLabel>
+                <TextField
+                    id="level"
+                    type="number"
+                    size="small"
+                    min={MIN_LEVEL}
+                    max={MAX_LEVEL}
+                    value={level}
+                    onChange={(event) => {
+                        dispatch(setAllLevel(event.target.value))
+                    }}
+                />
+            </Box>
+
             <Table size="small">
                 <TableHead>
                     <TableRow>
