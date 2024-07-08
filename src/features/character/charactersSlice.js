@@ -19,6 +19,7 @@ const charactersSlice = createSlice({
         selectedIds: [0], // select caocao by default
         level: DEFAULT_LEVEL,
         sameLevelForAll: true,
+        belongs: [...new Set(characters.map((c) => c.belongTo))],
     },
     reducers: {
         select: (state, action) => {
