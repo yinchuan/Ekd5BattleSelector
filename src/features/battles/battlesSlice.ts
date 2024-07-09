@@ -1,16 +1,26 @@
 import { createSlice } from '@reduxjs/toolkit'
-import battles from '../../data/battles.json'
+import { BattleData } from '../../data/DataInterface'
+
+const battles: BattleData = require('../../data/battles.json')
 
 const RED = 1
 const BLUE = 2
 
+interface BattleState {
+    redOrBlue: number
+    battleId: number
+    battles: BattleData
+}
+
+const initialState: BattleState = {
+    redOrBlue: RED,
+    battleId: 1,
+    battles: battles,
+}
+
 const battlesSlice = createSlice({
     name: 'battles',
-    initialState: {
-        redOrBlue: RED,
-        battleId: 1,
-        battles: battles,
-    },
+    initialState,
     reducers: {
         red: (state) => {
             state.redOrBlue = RED

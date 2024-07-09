@@ -1,14 +1,14 @@
-import { useSelector, useDispatch } from 'react-redux'
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Tab, Tabs, Typography } from '@mui/material'
 
 import { select } from './charactersSlice'
+import { useAppDispatch, useAppSelector } from '../../app/hooks'
 
 const AvailableChracters = () => {
-    const dispatch = useDispatch()
-    const selectedIds = useSelector((state) => state.characters.selectedIds)
-    const characters = useSelector((state) => state.characters.characters)
-    const belongs = useSelector((state) => state.characters.belongs)
+    const dispatch = useAppDispatch()
+    const selectedIds = useAppSelector((state) => state.characters.selectedIds)
+    const characters = useAppSelector((state) => state.characters.characters)
+    const belongs = useAppSelector((state) => state.characters.belongs)
 
     const [activeTab, setActiveTab] = useState(0)
 
@@ -28,7 +28,7 @@ const AvailableChracters = () => {
                 return (
                     <div
                         role="tabpanel"
-                        index={i}
+                        // index={i}
                         hidden={activeTab !== i}
                         id={`tab-${belongs[i]}`}
                     >

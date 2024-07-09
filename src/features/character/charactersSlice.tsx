@@ -1,26 +1,38 @@
 import { createSlice } from '@reduxjs/toolkit'
-import characters from '../../data/characters.json'
 import items from '../../data/Item.json'
 import { level_up } from '../../logic'
+import { CharacterData } from '../../data/DataInterface'
+
+const characters: CharacterData[] = require('../../data/characters.json')
 
 const MIN_LEVEL = 1
 const MAX_LEVEL = 50
 const DEFAULT_LEVEL = 40
 
+interface ChacracterState {
+    characters: CharacterData[]
+    selectedIds: number[]
+    level: number
+    sameLevelForAll: boolean
+    belongs: string[]
+}
+
+const initialState: ChacracterState = {
+    // only use the first 148 characeters, the rest are not quite useful
+    characters: JSON.parse(JSON.stringify(characters.slice(0, 148))).map(
+        (c: CharacterData) => {
+            return level_up(c, DEFAULT_LEVEL)
+        }
+    ),
+    selectedIds: [0], // select caocao by default
+    level: DEFAULT_LEVEL,
+    sameLevelForAll: true,
+    belongs: [...new Set(characters.map((c) => c.belongTo))],
+}
+
 const charactersSlice = createSlice({
     name: 'characters',
-    initialState: {
-        // only use the first 148 characeters, the rest are not quite useful
-        characters: JSON.parse(JSON.stringify(characters.slice(0, 148))).map(
-            (c) => {
-                return level_up(c, DEFAULT_LEVEL)
-            }
-        ),
-        selectedIds: [0], // select caocao by default
-        level: DEFAULT_LEVEL,
-        sameLevelForAll: true,
-        belongs: [...new Set(characters.map((c) => c.belongTo))],
-    },
+    initialState,
     reducers: {
         select: (state, action) => {
             // add one id to selectedIds, and sort by id in ascending order

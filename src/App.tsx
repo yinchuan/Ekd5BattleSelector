@@ -8,7 +8,6 @@ import {
     Select,
     Typography,
 } from '@mui/material'
-import { useDispatch, useSelector } from 'react-redux'
 
 import BattleSelector from './features/battles/BattleSelector'
 import Chacracters from './features/character/Characters'
@@ -16,14 +15,15 @@ import { setSaveId } from './features/saveId/saveIdSlice'
 
 import { eFileName, dFileName, generateDFile, generateEFile } from './logic'
 import { downloadFile } from './utils'
+import { useAppDispatch, useAppSelector } from './app/hooks'
 
-const App = () => {
-    const dispatch = useDispatch()
-    const battleId = useSelector((state) => state.battles.battleId)
-    const redOrBlue = useSelector((state) => state.battles.redOrBlue)
-    const saveId = useSelector((state) => state.saveId.id)
-    const characters = useSelector((state) => state.characters.characters)
-    const selectedIds = useSelector((state) => state.characters.selectedIds)
+const App: React.FC = () => {
+    const dispatch = useAppDispatch()
+    const battleId = useAppSelector((state) => state.battles.battleId)
+    const redOrBlue = useAppSelector((state) => state.battles.redOrBlue)
+    const saveId = useAppSelector((state) => state.saveId.id)
+    const characters = useAppSelector((state) => state.characters.characters)
+    const selectedIds = useAppSelector((state) => state.characters.selectedIds)
 
     return (
         <div>
@@ -78,14 +78,13 @@ const App = () => {
 
                 <Button
                     onClick={() => {
-                        downloadFile(
-                            dFileName(saveId),
-                            generateDFile(
-                                battleId,
-                                redOrBlue,
-                                selectedIds,
-                                characters
-                            )
+                        generateDFile(
+                            battleId,
+                            redOrBlue,
+                            selectedIds,
+                            characters
+                        ).then((buffer) =>
+                            downloadFile(dFileName(saveId), buffer)
                         )
                         downloadFile(eFileName(saveId), generateEFile(battleId))
                     }}

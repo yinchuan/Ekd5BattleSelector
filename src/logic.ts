@@ -1,15 +1,19 @@
 import troop_HP_MP from './data/troop_HP_MP.json'
-import person_addup from './data/person_addup.json'
 import troop from './data/troop.json'
 import items from './data/Item.json'
-import battles from './data/battles.json'
-// need to remove this
-import unChangedCharacters from './data/characters.json'
-
-import eFile from './data/Sv01d.e5s'
+import dFile from './data/Sv01d.e5s'
 import { writeMsg } from './utils'
+import {
+    BattleData,
+    CharacterData,
+    PersonAddupData,
+} from './data/DataInterface'
 
-export const level_up = (character, level) => {
+const battles: BattleData = require('./data/battles.json')
+const person_addup: PersonAddupData = require('./data/person_addup.json')
+const unChangedCharacters: CharacterData[] = require('./data/characters.json')
+
+export const level_up = (character: any, level: number) => {
     // promote troop_type, only type <= 38 can be promoted
     character.level = level
     character.exp = 0
@@ -60,7 +64,7 @@ export const level_up = (character, level) => {
 
 // how many times 印绶 has been used
 // related to MP/HP, troop_type
-const getStampTimes = (level) => {
+const getStampTimes = (level: number) => {
     if (level >= 30) {
         return 2
     }
@@ -72,7 +76,7 @@ const getStampTimes = (level) => {
     return 0
 }
 
-const getHP = (charId, level) => {
+const getHP = (charId: number, level: number) => {
     let troopId = getTroopId(unChangedCharacters[charId].troop_type) // use original unchanged one
     let levelForHPMP = level + getStampTimes(level) * 2
     return (
@@ -84,7 +88,7 @@ const getHP = (charId, level) => {
     )
 }
 
-const getMP = (charId, level) => {
+const getMP = (charId: number, level: number) => {
     let troopId = getTroopId(unChangedCharacters[charId].troop_type)
     let levelForHPMP = level + getStampTimes(level) * 2
     return (
@@ -96,25 +100,25 @@ const getMP = (charId, level) => {
     )
 }
 
-const getTroopId = (troopType) => {
+const getTroopId = (troopType: number) => {
     return Math.floor(troopType / 3)
 }
 
-const capabilityIncreByTalent = (n) => {
+const capabilityIncreByTalent = (n: number) => {
     if (n >= 45) return 4
     if (n >= 35) return 3
     if (n >= 25) return 2
     return 1
 }
 
-const getCapability = (talent, troop, level) => {
+const getCapability = (talent: number, troop: number, level: number) => {
     return (
         talent +
         Math.floor((capabilityIncreByTalent(talent) + troop) / 2) * level
     )
 }
 
-const toChapter = (battleId) => {
+const toChapter = (battleId: number) => {
     // 吕布包围战
     if (battleId <= 14) {
         return 1
@@ -138,10 +142,10 @@ const toChapter = (battleId) => {
 }
 
 export const generateDFile = async (
-    battleId,
-    redOrBlue,
-    selectedIds,
-    characters
+    battleId: number,
+    redOrBlue: number,
+    selectedIds: number[],
+    characters: any
 ) => {
     const ITEM_START_ADDRESS = 0x57
     const CHAR_DATA_START = 0x14df
@@ -163,9 +167,9 @@ export const generateDFile = async (
     const OFFSET_DIE_TIMES = 25
 
     // load binary file
-    const response = await fetch(eFile)
+    console.log(dFile)
+    const response = await fetch(dFile)
     const buffer = await response.arrayBuffer()
-
     const view = new DataView(buffer)
 
     // set which battle to play
@@ -249,7 +253,7 @@ export const generateDFile = async (
     return buffer
 }
 
-export const generateEFile = (battleId) => {
+export const generateEFile = (battleId: number) => {
     const EFILE_SIZE = 10330
     const OFF_R_SCENE_SECTION_ID = 0x2850
     const OFF_VAR_START = 0x848
@@ -260,16 +264,15 @@ export const generateEFile = (battleId) => {
     buffer[OFF_R_SCENE_SECTION_ID] = battles[battleId].num_scenes - 2 // skip all scenes except for the last one to set 我军出场 properly
 
     // set variables
-    if (battles[battleId].hasOwnProperty('vars')) {
+    battles[battleId].vars &&
         battles[battleId].vars.forEach((item) => {
             buffer[OFF_VAR_START + item * VAR_LEN] = 1
         })
-    }
 
     return buffer
 }
 
-const sortCharacters = (characters) => {
+const sortCharacters = (characters: CharacterData[]) => {
     characters.sort((a, b) => {
         if (a.id < b.id) {
             return -1
@@ -282,14 +285,14 @@ const sortCharacters = (characters) => {
     return characters
 }
 
-export const dFileName = (saveId) => {
+export const dFileName = (saveId: number) => {
     return `Sv0${saveId - 1}d.e5s`
 }
 
-export const eFileName = (saveId) => {
+export const eFileName = (saveId: number) => {
     return `Sv0${saveId - 1}e.e5s`
 }
 
-const encodeBattleId = (battleId) => {
+const encodeBattleId = (battleId: number) => {
     return Math.floor(battleId / 10) * 20 + (battleId % 10) * 2
 }

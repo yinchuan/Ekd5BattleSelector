@@ -13,13 +13,15 @@ const persistConnfig = {
     stateReconciler: autoMergeLevel2,
 }
 
-const persistedReducer = persistReducer(
+const rootReducer = combineReducers({
+    battles: battleReducer,
+    saveId: saveIdReducer,
+    characters: characterReducer,
+})
+
+const persistedReducer = persistReducer<ReturnType<typeof rootReducer>>(
     persistConnfig,
-    combineReducers({
-        battles: battleReducer,
-        saveId: saveIdReducer,
-        characters: characterReducer,
-    })
+    rootReducer
 )
 
 const store = configureStore({
@@ -27,3 +29,8 @@ const store = configureStore({
 })
 
 export default store
+
+export type AppStore = typeof store
+export type RootState = ReturnType<typeof rootReducer>
+// export type AppDispatch = AppStore['dispatch']
+export type AppDispatch = (typeof store)['dispatch']

@@ -1,6 +1,5 @@
 import items from '../../data/Item.json'
 import troop from '../../data/troop.json'
-import { useDispatch, useSelector } from 'react-redux'
 import {
     deSelect,
     updateWeapon,
@@ -20,13 +19,14 @@ import {
     Typography,
 } from '@mui/material'
 import { setAllLevel, setLevel, setSameLevelForAll } from './charactersSlice'
+import { useAppDispatch, useAppSelector } from '../../app/hooks'
 
-const InOurTeam = () => {
-    const dispatch = useDispatch()
-    const characters = useSelector((state) => state.characters.characters)
-    const selectedIds = useSelector((state) => state.characters.selectedIds)
-    const level = useSelector((state) => state.characters.level)
-    const sameLevelForAll = useSelector(
+const InOurTeam: React.FC = () => {
+    const dispatch = useAppDispatch()
+    const characters = useAppSelector((state) => state.characters.characters)
+    const selectedIds = useAppSelector((state) => state.characters.selectedIds)
+    const level = useAppSelector((state) => state.characters.level)
+    const sameLevelForAll = useAppSelector(
         (state) => state.characters.sameLevelForAll
     )
 
@@ -54,8 +54,8 @@ const InOurTeam = () => {
                     id="level"
                     type="number"
                     size="small"
-                    min={MIN_LEVEL}
-                    max={MAX_LEVEL}
+                    // min={MIN_LEVEL}
+                    // max={MAX_LEVEL}
                     value={level}
                     onChange={(event) => {
                         dispatch(setAllLevel(event.target.value))
@@ -97,8 +97,8 @@ const InOurTeam = () => {
                                     id={`${id}-level`}
                                     type="number"
                                     size="small"
-                                    min={MIN_LEVEL}
-                                    max={MAX_LEVEL}
+                                    // min={MIN_LEVEL}
+                                    // max={MAX_LEVEL}
                                     value={characters[id].level}
                                     onChange={(event) => {
                                         dispatch(

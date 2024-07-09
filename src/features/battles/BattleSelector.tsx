@@ -11,20 +11,19 @@ import {
     Typography,
 } from '@mui/material'
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
 
 import { red, blue, selectBattle } from './battlesSlice'
+import { useAppDispatch, useAppSelector } from '../../app/hooks'
 
-const BattleSelector = () => {
-    const dispatch = useDispatch()
-    const battles = useSelector((state) => state.battles.battles)
-    const redOrBlue = useSelector((state) => state.battles.redOrBlue)
-    const battleId = useSelector((state) => state.battles.battleId)
+const BattleSelector: React.FC = () => {
+    const dispatch = useAppDispatch()
+    const battles = useAppSelector((state) => state.battles.battles)
+    const redOrBlue = useAppSelector((state) => state.battles.redOrBlue)
+    const battleId = useAppSelector((state) => state.battles.battleId)
 
     // used to show chapter before the first battle of the chapter
-    const getChapter = (id) => {
-        id = parseInt(id)
-        const chapter = {
+    const getChapter = (id: number) => {
+        const chapter: { [key: number]: number } = {
             0: 1,
             15: 2,
             25: 3,
@@ -79,7 +78,7 @@ const BattleSelector = () => {
                                     {battles[key].name}
                                 </MenuItem>
                             )
-                            const chapter = getChapter(key)
+                            const chapter = getChapter(Number(key))
 
                             return chapter > 0
                                 ? [
