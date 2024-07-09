@@ -11,5 +11,4 @@ Generate a checkpoint file to play any battle with chosen characters in the game
 -   Change the level of heroes
 
 # Screenshot
-
-![image](https://github.com/yinchuan/Ekd5BattleSelector/assets/2181835/3828dbb5-31ac-4831-9595-a70009942591)
+![image](https://github.com/yinchuan/Ekd5BattleSelector/assets/2181835/aca0b55c-0466-40bc-884e-ddf983d7aeea)
