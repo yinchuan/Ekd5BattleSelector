@@ -179,7 +179,7 @@ export const generateDFile = async (
     view.setInt8(0x3d, toChapter(battleId))
 
     // set level in checkpoint name which decided by 曹操's level
-    view.setInt8(0x01, unChangedCharacters[0].level) //
+    view.setInt8(0x01, characters[0].level)
 
     // set battle name, 0x05 - 0x19: 20bytes, battle name, “夺回汉中"
     writeMsg(view, 0x05, battles[battleId].name)
